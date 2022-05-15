@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c453ef0fa0e5c547a0ea704431fd572
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - manaball: {fileID: 11400000, guid: 08d213b19084ce941a0181b5aa6cd22d, type: 2}
+  - shuriken: {fileID: 11400000, guid: ac5cc076e538db14b952ccba1a18670d, type: 2}
+  - icicle: {fileID: 11400000, guid: 6f6938ac887e9a74fa4f9936d23dfc11, type: 2}
+  - earthDrill: {fileID: 11400000, guid: c6b3954dc3128ce44b02ee760ce76a1c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

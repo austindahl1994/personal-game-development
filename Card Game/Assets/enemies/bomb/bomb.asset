@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d5a844401c2bb1439ada73c69a4c10d, type: 3}
+  m_Name: bomb
+  m_EditorClassIdentifier: 
+  name: Bomb
+  startingBlock: 55
+  damage: 20
+  poisonDamage: 0
+  health: 1
+  hasDeathEffect: 0
+  attackAction: 0
+  defendAction: 0
+  hybrid: 0
+  countdownAction: 1
+  poisonAction: 0
+  curseAction: 0
+  summonAction: 0
+  buffSelfAction: 0
+  buffOthersAction: 0
+  debuffAction: 0
+  healSelf: 0
+  healOthers: 0

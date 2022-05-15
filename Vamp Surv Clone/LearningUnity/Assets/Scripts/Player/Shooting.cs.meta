@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6ac75f8d1e8c05d42b93840d6027b2fd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fireballPrefab: {fileID: 3055574505897536016, guid: 0ad27417e6833ce4298d9a2eaa7ee475, type: 3}
+  - shurikenPrefab: {fileID: 6041336914512311724, guid: ac463ad6585a59b4794d2f4e82d8c6e6, type: 3}
+  - enemyPos: {instanceID: 0}
+  - enemy: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
