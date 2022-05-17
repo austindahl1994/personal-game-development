@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8A07AA0B-4D3A-2778-F584-0A14263F80D0}</ProjectGuid>
+    <ProjectGuid>{4F358D50-4272-BF21-4E58-662C44F30D02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,20 +56,23 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\relic.cs" />
+    <Compile Include="Assets\Scripts\relic.cs" />
     <Compile Include="Assets\Scripts\scriptableScripts\enemyStats.cs" />
     <Compile Include="Assets\Scripts\choiceCanvas.cs" />
     <Compile Include="Assets\Scripts\cardPlayer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\scriptableScripts\relicStats.cs" />
+    <Compile Include="Assets\Scripts\player.cs" />
     <Compile Include="Assets\Scripts\clickOutsideCloseUI.cs" />
     <Compile Include="Assets\Scripts\enemy.cs" />
+    <Compile Include="Assets\Scripts\scriptableScripts\playerStats.cs" />
     <Compile Include="Assets\Scripts\deselectCard.cs" />
     <Compile Include="Assets\Scripts\enemyUI.cs" />
     <Compile Include="Assets\Scripts\scriptableScripts\cardScriptable.cs" />
+    <Compile Include="Assets\Scripts\playerUI.cs" />
     <Compile Include="Assets\Scripts\Card.cs" />
-    <Compile Include="Assets\healthBarSlider.cs" />
-    <Compile Include="Assets\RelicManager.cs" />
+    <Compile Include="Assets\Scripts\healthBarSlider.cs" />
+    <Compile Include="Assets\Scripts\RelicManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -698,47 +701,47 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.Player.csproj">
-      <Project>{45427962-C2C0-A237-53C8-381E2DFB1C8C}</Project>
+      <Project>{75909E09-9E4E-578B-14C7-7080BB200777}</Project>
       <Name>Unity.InternalAPIEngineBridge.001.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.PixelPerfect.Player.csproj">
-      <Project>{B22C1BB7-B0EA-CD93-1E26-65A89FB74C8D}</Project>
+      <Project>{5960B565-C688-2CCC-4180-278DD7D29DF2}</Project>
       <Name>Unity.2D.PixelPerfect.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
-      <Project>{D2E6596F-2E2B-8134-9D55-BC4640CFC1D7}</Project>
+      <Project>{AFF020EB-89AC-F3C4-368B-1110C9CE3829}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{B57BCC01-79E7-9303-06CE-95A1F2849ABA}</Project>
+      <Project>{647D0961-18F7-8808-9712-72F6CD739574}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{2EED2E58-5B3E-0144-DFC1-530E0797C71A}</Project>
+      <Project>{BFFD1F58-9BAB-48D8-DBCE-65C85EE74A6E}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
-      <Project>{B1B5719C-51D2-8051-AD48-8479B4F0265F}</Project>
+      <Project>{59B64DDD-3FFE-CD8F-DC8F-054E726156B3}</Project>
       <Name>Unity.Mathematics.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Runtime.Player.csproj">
-      <Project>{63F18598-A584-0882-3AC8-DD469D1CA217}</Project>
+      <Project>{C451A9E5-7B27-E805-55E6-4833CCC6A89C}</Project>
       <Name>Unity.2D.IK.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.Player.csproj">
-      <Project>{8606B202-BE32-E851-7830-17DF0F0B121B}</Project>
+      <Project>{6815C97B-3369-201D-7911-69B74C8FEA49}</Project>
       <Name>Unity.2D.Animation.Triangle.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.Player.csproj">
-      <Project>{63231280-CDFF-0BC4-0E15-7C5D37210834}</Project>
+      <Project>{0E935029-5879-2651-154A-65128DD7E972}</Project>
       <Name>Unity.2D.Animation.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.Player.csproj">
-      <Project>{EB1EBA98-11FA-B483-E208-A8CF7B69F4AB}</Project>
+      <Project>{ADE54A3F-B668-953A-8CA4-10AD9338AE96}</Project>
       <Name>Unity.2D.Common.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.Player.csproj">
-      <Project>{E4E49CC0-C0EF-8852-1F1B-00EE13EE9868}</Project>
+      <Project>{527202B1-6B68-59D6-4FD8-43D3641BBA7C}</Project>
       <Name>Unity.2D.SpriteShape.Runtime.Player</Name>
     </ProjectReference>
   </ItemGroup>

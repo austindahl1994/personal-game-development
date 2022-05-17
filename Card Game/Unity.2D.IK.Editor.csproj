@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EB06F66E-F4D0-DD7D-23B7-E0BA8B0A3809}</ProjectGuid>
+    <ProjectGuid>{92612BC9-99AE-8F28-6FB4-312025C7B19D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.IK.Editor</AssemblyName>
@@ -669,43 +669,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{9A5ABC82-FBB1-D0EA-5B8F-FED95B402412}</Project>
+      <Project>{DDD50EC5-F7A8-2FBE-B317-FBFEE18BE3EF}</Project>
       <Name>Unity.InternalAPIEditorBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{4DB2AB9F-1F1B-19A0-D05F-D2387283634C}</Project>
+      <Project>{78ADD97C-CB55-F816-5FB6-FFCE2B914408}</Project>
       <Name>Unity.InternalAPIEngineBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{6E2AEFFF-D450-3C38-B944-7266D4E06DBF}</Project>
+      <Project>{C64656B1-78CD-F60C-1CDF-D9333C5C8F70}</Project>
       <Name>Unity.2D.Common.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{A8D98244-4238-856E-A08A-7E584540FC4E}</Project>
+      <Project>{42A610CA-46AA-3545-6DF8-8466FF93746C}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
-      <Project>{11B86134-1CDF-63AA-52FF-118785092564}</Project>
+      <Project>{C3629B6A-8B60-7E7B-8041-BC686C559493}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{C16B9C98-2AD6-9BB5-D374-C19DBB414A15}</Project>
+      <Project>{9A3B9D0D-7398-6B88-DC1F-524FC6A8DCA8}</Project>
       <Name>Unity.2D.Animation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{83CE8CD9-C4C5-4220-B217-CEBF1A784D95}</Project>
+      <Project>{9C31BE42-2133-A2D9-C4D5-688A0C010E62}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{D885AB0A-B6A5-D840-A449-F66E6CEDDEBE}</Project>
+      <Project>{BFD739FA-4208-C3F0-A1B6-CD47D9C88851}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{51F25C50-73BF-A8A7-3033-B74BBAD3564A}</Project>
+      <Project>{1703500F-4388-00AE-CE41-C4D4C436EE9C}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{A9CF934A-0218-5BF6-61FC-CC3DB549FC90}</Project>
+      <Project>{798AD1EF-B765-FE54-AD2A-DD3FA8831E13}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

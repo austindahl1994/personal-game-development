@@ -93,7 +93,6 @@ MonoBehaviour:
   image: {fileID: 3267008822737635182}
   gm: {fileID: 5208213271211374080, guid: a4744f2abd99ef747bc1034076e0a69c, type: 3}
   play: {fileID: 1717416773755819314, guid: 0dd32ff422b24044e9d7f5ee290b5c15, type: 3}
-  card: {fileID: 0}
 --- !u!1 &3267008823415541759
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +165,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0002346, y: -90.1253}
-  m_SizeDelta: {x: 145.47, y: 27.6507}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3267008823466445261
 CanvasRenderer:
@@ -196,7 +195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 32797701e5576ea4184d0b4f01cb43f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d672a916f1b5c644491f03438f30339e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -242,8 +241,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00024414062, y: -90.125305}
-  m_SizeDelta: {x: 39.045197, y: -78.77409}
+  m_AnchoredPosition: {x: -0.00024414062, y: -89.4}
+  m_SizeDelta: {x: 80.2171, y: -27.3092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3267008823807281668
 CanvasRenderer:
@@ -273,7 +272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 32797701e5576ea4184d0b4f01cb43f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d672a916f1b5c644491f03438f30339e, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -329,10 +328,10 @@ RectTransform:
   m_Father: {fileID: 3267008823807281667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 6.4246063, y: 7.4954987}
+  m_AnchorMin: {x: 0.20454888, y: 0.289}
+  m_AnchorMax: {x: 0.8014512, y: 0.711}
+  m_AnchoredPosition: {x: -0.5, y: 2.6}
+  m_SizeDelta: {x: 0.0215, y: -5.5272}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3267008823936852632
 CanvasRenderer:
@@ -389,7 +388,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.7
+  m_fontSize: 22.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -465,8 +464,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -82.80817, y: -3.9}
-  m_SizeDelta: {x: -106.2455, y: 11.9033}
+  m_AnchoredPosition: {x: -82.8, y: -0.099998474}
+  m_SizeDelta: {x: -167.9155, y: -76.1964}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8287838425000614186
 CanvasRenderer:
@@ -523,7 +522,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.4
+  m_fontSize: 26.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -601,8 +600,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.001667, y: -90.125}
-  m_SizeDelta: {x: 145.47, y: 27.651}
+  m_AnchoredPosition: {x: -0.0011787, y: -91.1648}
+  m_SizeDelta: {x: 205.751, y: 106.3461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9068140012543915529
 CanvasRenderer:
@@ -632,7 +631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 529486bd2e9fefe4684801e401179a72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 605485bd889d8234bb7b3b8487c2f0f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -676,7 +675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -81.59829, y: -4.175003}
+  m_AnchoredPosition: {x: -81.6, y: -1}
   m_SizeDelta: {x: 64.426, y: 64.426}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7308183467633867273

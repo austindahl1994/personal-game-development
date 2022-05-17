@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: aa9ef5ca432bba1449106c7aa621c693, type: 2}
   actions: []
+  retainsBlock: 1
 --- !u!95 &8678546272715195126
 Animator:
   serializedVersion: 3

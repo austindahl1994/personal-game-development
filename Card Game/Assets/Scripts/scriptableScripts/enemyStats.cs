@@ -11,6 +11,7 @@ public class enemyStats : ScriptableObject
     public int poisonDamage;
     public int health;
     public bool hasDeathEffect = false;
+    public bool retainsBlock = false;
     public bool attackAction;
     public bool defendAction;
     public bool hybrid;

@@ -18,6 +18,7 @@ public class enemy : MonoBehaviour
     private float enemyMaxHealth;
     private float enemyHealth = 0f;
     private int block;
+    private int poison;
     private string enemyName;
     public List<string> actions = new List<string>();
     //make sure to create enemyUI prefab variant, then add enemy prefab to it with enemy stats scriptable
@@ -80,6 +81,19 @@ public class enemy : MonoBehaviour
         }
     }
 
+    public void doAllActions() {
+        if (enemyHealth <= 0)
+        {
+            return;
+        }
+        directHealth(this.poison);
+        if (this.poison > 0) {
+            poison--;
+        }
+        setBlock(0);
+        takeTurn();
+    }
+
     public float getEnemyHealth() {
         return this.enemyHealth;
     }
@@ -93,7 +107,7 @@ public class enemy : MonoBehaviour
     private void Die()
     {
         gameObject.tag = "Untagged";
-        Debug.Log("Die was called");
+        //Debug.Log("Die was called");
         this.anim.SetTrigger("death");
     }
 
@@ -119,6 +133,23 @@ public class enemy : MonoBehaviour
         }
     }
 
+    public void addPoison(int amount) {
+        this.poison += amount;
+    }
+
+    public void setBlock(int input) {
+        if (this.stats.retainsBlock) {
+            return;
+        }
+        this.block = input;
+        updateBlock();
+    }
+
+    public void addBlock(int block) {
+        this.block += block;
+        updateBlock();
+    }
+
     public void directBlock(int amount) {
         block -= amount;
         updateBlock();
@@ -127,7 +158,15 @@ public class enemy : MonoBehaviour
     public void directHealth(int amount)
     {
         enemyHealth -= amount;
-        hpBar.setHealth(enemyHealth, enemyMaxHealth);
+        if (enemyHealth <= 0)
+        {
+            enemyHealth = 0f;
+            hpBar.setHealth(0, enemyMaxHealth);
+            Die();
+        }
+        else {
+            hpBar.setHealth(enemyHealth, enemyMaxHealth);
+        }
     }
 
     public void setupBars() {
