@@ -83,7 +83,13 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
             //Debug.Log("it contains (defense)");
             modifiedText = unmodifiedText.Replace("def", defense.ToString());
         }
-        
+
+        if (unmodifiedText.Contains("poi"))
+        {
+            //Debug.Log("it contains (defense)");
+            modifiedText = unmodifiedText.Replace("poi", poison.ToString());
+        }
+
         // If no changes were made then use original text
         if (modifiedText == null) {
             return unmodifiedText;

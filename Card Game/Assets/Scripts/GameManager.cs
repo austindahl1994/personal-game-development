@@ -6,6 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     private enemy enemy;
+    private player player;
     //list of all the cards
     public List<Card> allAvailableCards = new List<Card>();
     public List<Card> allHiddenCards = new List<Card>();
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
     public int modManaMultiply;
     private void Start()
     {
+        player = FindObjectOfType<player>();
         modManaAdd = 0;
         modManaMultiply = 1;
         isInUI = false; //allows cards to be shown in hand
@@ -204,8 +206,9 @@ public class GameManager : MonoBehaviour
 
     private void startEnemyTurn() {
         foreach (GameObject enemy in getAllEnemies()) {
-            enemy.GetComponent<enemy>().takeTurn();
+            enemy.GetComponent<enemy>().doAllActions();
         }
+        player.GetComponent<player>().setBlock(0);
         startPlayerTurn();
     }
 

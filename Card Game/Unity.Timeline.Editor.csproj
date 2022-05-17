@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B5677FE4-ECBA-8A87-0ED9-676CC075068E}</ProjectGuid>
+    <ProjectGuid>{ED63B30A-BAAD-AF27-4F41-AE1A0147F73A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Timeline.Editor</AssemblyName>
@@ -920,23 +920,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{DE5AC6B3-F928-92A2-18D7-721AA42AB582}</Project>
+      <Project>{06C47BAA-8A40-D055-3682-BD9DE6ACF8CE}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{83CE8CD9-C4C5-4220-B217-CEBF1A784D95}</Project>
+      <Project>{9C31BE42-2133-A2D9-C4D5-688A0C010E62}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{D885AB0A-B6A5-D840-A449-F66E6CEDDEBE}</Project>
+      <Project>{BFD739FA-4208-C3F0-A1B6-CD47D9C88851}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{51F25C50-73BF-A8A7-3033-B74BBAD3564A}</Project>
+      <Project>{1703500F-4388-00AE-CE41-C4D4C436EE9C}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{A9CF934A-0218-5BF6-61FC-CC3DB549FC90}</Project>
+      <Project>{798AD1EF-B765-FE54-AD2A-DD3FA8831E13}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
