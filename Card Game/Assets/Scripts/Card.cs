@@ -7,6 +7,8 @@ using TMPro;
 
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
+    //to add, if card has special from scriptable, look up its name and call invoke on it,
+    //many functions with names of the special cards, power cards that do something special so not many
     public cardScriptable card;
 
     private GameManager gm;

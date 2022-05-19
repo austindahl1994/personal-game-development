@@ -15,11 +15,11 @@ C:/Users/Dubz/Desktop/Unity Projects/Card Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58883
+64498
 Successfully changed project path to: C:/Users/Dubz/Desktop/Unity Projects/Card Game
 C:/Users/Dubz/Desktop/Unity Projects/Card Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 56.55 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 47.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.25f1 (9b9180224418)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001980 seconds.
+Registered in 0.002369 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 41.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 58.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.579 seconds
+- Completed reload, in  0.616 seconds
 Domain Reload Profiling:
-	ReloadAssembly (579ms)
-		BeginReloadAssembly (50ms)
+	ReloadAssembly (616ms)
+		BeginReloadAssembly (52ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (462ms)
-			LoadAssemblies (48ms)
+		EndReloadAssembly (483ms)
+			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (168ms)
+			SetupTypeCache (139ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (159ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (210ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (42ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (74ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (59ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (97ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004922 seconds.
+Registered in 0.011953 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 55.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.197 seconds
+- Completed reload, in  1.390 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1199ms)
-		BeginReloadAssembly (141ms)
+	ReloadAssembly (1392ms)
+		BeginReloadAssembly (149ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (997ms)
-			LoadAssemblies (117ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1178ms)
+			LoadAssemblies (107ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (312ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (367ms)
+			SetupTypeCache (428ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (428ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (45ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (206ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (242ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2223 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 99.2 MB.
 System memory in use after: 99.3 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2661.
-Total: 3.273400 ms (FindLiveObjects: 0.207400 ms CreateObjectMapping: 0.152700 ms MarkObjects: 2.806600 ms  DeleteObjects: 0.105100 ms)
+Total: 2.938500 ms (FindLiveObjects: 0.199100 ms CreateObjectMapping: 0.102900 ms MarkObjects: 2.565000 ms  DeleteObjects: 0.069600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,2192 +131,128 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/GameManager.cs
-  artifactKey: Guid(e9c4ac1daf5d9cb48b62c3b9fd1a5ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameManager.cs using Guid(e9c4ac1daf5d9cb48b62c3b9fd1a5ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '822bb7833d75aca8b2123a25c99401cf') in 0.041664 seconds 
-  Import took 0.045980 seconds .
+  path: Assets/Scripts/Card.cs
+  artifactKey: Guid(351e795add7a8694ebc0b441e94b8d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Card.cs using Guid(351e795add7a8694ebc0b441e94b8d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a69527ff56733e05a5d4b1f0404f6779') in 0.040353 seconds 
+  Import took 0.044348 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 317.495394 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb401aa55abbb71fee99df58dc083ac7') in 0.152642 seconds 
-  Import took 0.157281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6bde389819bc974e806d4782484bcd') in 0.047190 seconds 
-  Import took 0.051092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 118.390448 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dfd5497b4c85b8b7640faec1750afad') in 0.039151 seconds 
-  Import took 0.043879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ceb16ec5329deab86cec0dc253680be') in 0.042697 seconds 
-  Import took 0.047234 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b225434961bf2112a82d918ed44f7d4') in 0.041915 seconds 
-  Import took 0.046144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c872dab5eb1dc78acb8ea9b1e8d0ce34') in 0.038498 seconds 
-  Import took 0.043250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52bef22c28d37cbe383a461ed8e8ecc') in 0.041505 seconds 
-  Import took 0.045536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964768614887e821151c38c760d83f31') in 0.045315 seconds 
-  Import took 0.049557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.331771 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3ea3310b42d832e34b851ffc34fe00') in 0.031518 seconds 
-  Import took 0.035344 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2850b8be275659b6d5b853ac4522235f') in 0.037191 seconds 
-  Import took 0.041073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5992a5a229eaf9b180e2c7c0ad30cf38') in 0.038404 seconds 
-  Import took 0.042681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e213821d8fb38c6ccbc0c5121ace04') in 0.037308 seconds 
-  Import took 0.041046 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ede1e0d9493e1885b5341bb5e2c2016') in 0.038875 seconds 
-  Import took 0.042773 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455a1e844343ffaafeb6820aca247536') in 0.035681 seconds 
-  Import took 0.039432 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.250041 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f5212e8307cf31b087ed54ecec8dc4') in 0.031096 seconds 
-  Import took 0.035164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e9a35f8d94b72b41147febfc1b4463') in 0.041357 seconds 
-  Import took 0.046455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a916352e3a67e4f52cd88a51b15634d') in 0.038450 seconds 
-  Import took 0.042413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43dd5734f3cb2aba2395f5091e82a05f') in 0.040296 seconds 
-  Import took 0.045280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af22fcf3042de5050ed2f3b1cf1fff54') in 0.037344 seconds 
-  Import took 0.041137 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179b92e70d52029fd61546a71f9cae46') in 0.036214 seconds 
-  Import took 0.039503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.178770 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609aadc3fa407153890ac94ee6421c50') in 0.030345 seconds 
-  Import took 0.034308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7000bae82b10d344fe5f2db976681a0f') in 0.038784 seconds 
-  Import took 0.043246 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c340ea53a6a04a212660660baee35a7c') in 0.038260 seconds 
-  Import took 0.042935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f90f3f440293ac25d97115f0a10467') in 0.036935 seconds 
-  Import took 0.041791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3f71001c4e613e78fdb1e506a354e9') in 0.043030 seconds 
-  Import took 0.046988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9f45b15bd5792bb75a5dac0bba1222') in 0.036384 seconds 
-  Import took 0.040189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.202437 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e50b7ce6dec00e1e501d5a770316bd') in 0.032772 seconds 
-  Import took 0.037926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f506eaed5dcc8614444a20b3b1289e') in 0.039296 seconds 
-  Import took 0.043144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b43b878280cc0bd9a2e270498c835b') in 0.036726 seconds 
-  Import took 0.040625 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc57d48cdaba37f955f0df24d6c0ddc7') in 0.036249 seconds 
-  Import took 0.039867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd20dc55a927d23497adfafaa039e7858') in 0.038378 seconds 
-  Import took 0.042559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98cfdbb0666c70e1c66dc575201ece7') in 0.036119 seconds 
-  Import took 0.039831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.893510 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a3b6361722ae346b99cd2fa08ae131') in 0.028669 seconds 
-  Import took 0.032950 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091871d05b7856a2579d8cecd98ddc81') in 0.034632 seconds 
-  Import took 0.038076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fd7a985fee88735c6c6e4096fc718bb') in 0.034820 seconds 
-  Import took 0.038172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd61898e56820b6418ca6925e948f5f5d') in 0.039483 seconds 
-  Import took 0.042974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3e495809a106a457954ed9d0619589e') in 0.035164 seconds 
-  Import took 0.039426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc41d1146dae6de9a7a02f43ae8437c') in 0.035702 seconds 
-  Import took 0.039456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.506383 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5850957ea0e8965469b6971fc53a1f9b') in 0.033039 seconds 
-  Import took 0.037445 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9cf2d1b3719244be358efb73ea17e54') in 0.037571 seconds 
-  Import took 0.041170 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5747ffdfb2354d4488276115653917c4') in 0.036695 seconds 
-  Import took 0.040630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2366a96d6711296a09a924b2308f34') in 0.037242 seconds 
-  Import took 0.040949 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6293966f3d6dcf8f997a651d93f1f8') in 0.038523 seconds 
-  Import took 0.042435 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bf8a03d031762762cb07c22adec294') in 0.039655 seconds 
-  Import took 0.043294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.275516 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ec5cb04d1500688703473017639555') in 0.031596 seconds 
-  Import took 0.036939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f161cd6d735ac0adff6fba0f2ce088dc') in 0.036468 seconds 
-  Import took 0.040010 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf54b863eb060aa0df7c279008a2cca') in 0.036158 seconds 
-  Import took 0.039900 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000335 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212fb759b8cc5b60f9e3a8a197ed219b') in 0.036317 seconds 
-  Import took 0.040372 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432cbd94ee54058a73f0ae41c006295a') in 0.041898 seconds 
-  Import took 0.045391 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c419265170b1fa213e55e6321b7e5f17') in 0.036867 seconds 
-  Import took 0.040228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.477737 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b16585dec9943501505d427447e687') in 0.028847 seconds 
-  Import took 0.032635 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96c286ea5ab4df24a790f5aaead5dda') in 0.035917 seconds 
-  Import took 0.039482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10bc86148f204d8b328c7122d0446a04') in 0.035604 seconds 
-  Import took 0.039900 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9722492a6bba7a5353f5aa3b5ba64b9') in 0.039149 seconds 
-  Import took 0.043118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a5cba6015db9e026ff0b6aa10f95ac') in 0.039814 seconds 
-  Import took 0.043473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ec4ddaa77bff4d9d0dd936621ffae3') in 0.037037 seconds 
-  Import took 0.040688 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.369570 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b617fa3881db120b5931989846ccc75a') in 0.036753 seconds 
-  Import took 0.040625 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f1c13fb9e497dad052fb945dd125de') in 0.036927 seconds 
-  Import took 0.040599 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ecae15bb0cfe07ada4ecf970b0f6ec2') in 0.034592 seconds 
-  Import took 0.038991 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc4fd01b28c01558d5f1e955415f00e') in 0.036889 seconds 
-  Import took 0.040388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24a3f686182daa1b74dd72c3f51f863') in 0.034375 seconds 
-  Import took 0.037776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6d1198e02be9c531fdda8e6fd53dd6') in 0.036100 seconds 
-  Import took 0.039361 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.420003 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6773016c9b9e1ab752021df82ce07456') in 0.030884 seconds 
-  Import took 0.034680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '386d2b61a00031d71b7f323bcf981788') in 0.039080 seconds 
-  Import took 0.043492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94823bfcccfd80e7212186626c02d3c6') in 0.040867 seconds 
-  Import took 0.044586 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d792411060ddb3344b161b325af0f4') in 0.035105 seconds 
-  Import took 0.038953 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77682a2778b9b28688e2833b23235b96') in 0.035848 seconds 
-  Import took 0.039534 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0efc02a0c038581ddc7d2f64091182') in 0.033594 seconds 
-  Import took 0.037135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.106710 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4586889e7866414fb9cf116cec916614') in 0.035302 seconds 
-  Import took 0.038874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7cada941ca58db7b83dbc3d7e4a427') in 0.041610 seconds 
-  Import took 0.045068 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed469dd36863673ad8291d613bebf23') in 0.035779 seconds 
-  Import took 0.039650 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431c0bb787b4d1f3ae96feb120d4559b') in 0.035606 seconds 
-  Import took 0.040041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6b7903f907371c48814bd5c8e19bbd') in 0.037545 seconds 
-  Import took 0.041360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ee9bf3b53ee918e8a1b9345cea242fb') in 0.033685 seconds 
-  Import took 0.037101 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.404149 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76b4450fd1dd7ab523857d901ba9378') in 0.027613 seconds 
-  Import took 0.031139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000290 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956af62edde9a0a485411703ed5fa1c0') in 0.034310 seconds 
-  Import took 0.038505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d58974d5ed86eda12e90e69d834e54') in 0.034403 seconds 
-  Import took 0.038030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa2718f31d5751a2320d44dab879c8e') in 0.034385 seconds 
-  Import took 0.038545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101af5105fdb83dc6d7735e0ca22f22d') in 0.037426 seconds 
-  Import took 0.041909 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1584fa8f3aa7960517285bcfd6a1d7') in 0.037182 seconds 
-  Import took 0.040835 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.986907 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f561389ca8be8ac0ab2887dad14f93f') in 0.031696 seconds 
-  Import took 0.035620 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f16a90e27a0929aaef2cb38aefe8da4') in 0.040025 seconds 
-  Import took 0.044559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67edf3e19cfbac263411600b9d4ba4b3') in 0.038686 seconds 
-  Import took 0.042900 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca874058aeb57169945965b38a93e9c') in 0.037701 seconds 
-  Import took 0.042462 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411bd279487aea4813ae5628c0d7a9c8') in 0.039278 seconds 
-  Import took 0.042982 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2858bf48477a9c93b8596ad953038827') in 0.035921 seconds 
-  Import took 0.039623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.575220 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918a2a7f557590495aebef6b3b7e0467') in 0.029227 seconds 
-  Import took 0.032667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f1f96fe12083a5b2a33b3ddce85819') in 0.036258 seconds 
-  Import took 0.040317 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72162107ca4a725cf7dc01267c2d3d29') in 0.036454 seconds 
-  Import took 0.040170 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c9bad0a8660abe24cf027d7f2f20b6') in 0.037463 seconds 
-  Import took 0.041545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000457 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec262f4d2c4f067a80476fc76b97049') in 0.036353 seconds 
-  Import took 0.040020 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6502ef77289c4bec78e5da773abc61') in 0.035010 seconds 
-  Import took 0.038470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.599792 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf47b2da67028075389762622a33360b') in 0.036953 seconds 
-  Import took 0.041464 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9adeee7adc503c8955a7a0c7623cd37') in 0.039069 seconds 
-  Import took 0.042762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825d74c2a532305ffee42b64bd20c6ce') in 0.034135 seconds 
-  Import took 0.037893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc8cd45f76948c160cb1f44fb6380a7') in 0.035476 seconds 
-  Import took 0.039001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac39f93fd6e6f077a359527a188f27e') in 0.037427 seconds 
-  Import took 0.041264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80f6f1f022952c982521e56a10b2870b') in 0.035694 seconds 
-  Import took 0.039831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.673039 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d5e0f0b2e2e815ef490c07674b7d62') in 0.039239 seconds 
-  Import took 0.047706 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2de40d6f5ff4338f74afe88a92d774') in 0.034628 seconds 
-  Import took 0.038379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf248fe15d20a3e10da30965f029cf4a') in 0.036908 seconds 
-  Import took 0.040988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79bb317cd3c4c4c59a46ab21867840d8') in 0.036884 seconds 
-  Import took 0.040608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18e0b9e0763ff6094190bc8ad38a932') in 0.035896 seconds 
-  Import took 0.040575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a998512257fe692af15f9144fc4988a') in 0.034978 seconds 
-  Import took 0.038603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.527288 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da3b543319179186c9f1f6749ba9248') in 0.029515 seconds 
-  Import took 0.033152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f8d2603006380d8374521177113ce5') in 0.034223 seconds 
-  Import took 0.037462 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005b86bddb89b85f9edb334d76bfa2ba') in 0.040318 seconds 
-  Import took 0.043732 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881bb7daff86d23440976f1dc09210ee') in 0.036150 seconds 
-  Import took 0.039734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c9ed13ee389ce5fa0f7bc5b0ca2a63') in 0.037909 seconds 
-  Import took 0.042947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e6f23b3d152992e27663a521979861') in 0.036892 seconds 
-  Import took 0.040442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 51.409982 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbfd767ccdf6e589e52fe38633bf9264') in 0.033440 seconds 
-  Import took 0.037616 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7574e4731ddfd7624d9fe19dd7602b47') in 0.036410 seconds 
-  Import took 0.040194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2aa325e2f4306e4764ca0d49204ad38') in 0.038947 seconds 
-  Import took 0.043382 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5effe63b799af8d89a5572ee8b5acd2c') in 0.038001 seconds 
-  Import took 0.042651 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af012d49ddad1d020a4e587ec51a923') in 0.037495 seconds 
-  Import took 0.041563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdef87b08f40be967931ccd1487d8f1d') in 0.033711 seconds 
-  Import took 0.037176 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.212350 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0003aa63d7cae7ede79a1316add8c8f') in 0.031712 seconds 
-  Import took 0.035565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e479efee8d0fbdc5f3c294885ab3d94') in 0.043766 seconds 
-  Import took 0.048062 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3a63f6eb4baaeea015e565c9b7fc23') in 0.043081 seconds 
-  Import took 0.047093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81a19d5b703fb208cf8d96a6fb88cf3') in 0.037239 seconds 
-  Import took 0.042009 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d55a5624921c93fb4b75ac95b96723') in 0.042523 seconds 
-  Import took 0.047018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ace9e0ac7c1a5b1c435f7dcd819d7e') in 0.037341 seconds 
-  Import took 0.042003 seconds .
+  Time since last request: 121.344857 seconds.
+  path: Assets/Scripts/Card.cs
+  artifactKey: Guid(351e795add7a8694ebc0b441e94b8d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Card.cs using Guid(351e795add7a8694ebc0b441e94b8d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb0a3bb2065f9e246066f8cc7c87522') in 0.005276 seconds 
+  Import took 0.010185 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004853 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.072 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1073ms)
-		BeginReloadAssembly (137ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (861ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (340ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (297ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (190ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.2 MB.
-System memory in use after: 101.3 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2670.
-Total: 2.571300 ms (FindLiveObjects: 0.171400 ms CreateObjectMapping: 0.090300 ms MarkObjects: 2.292700 ms  DeleteObjects: 0.016100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 35.597714 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad0b2369b55cfd9481feb2d3c145b3d') in 0.076701 seconds 
-  Import took 0.080680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2325c345fb5a269e4056c237d9306710') in 0.065498 seconds 
-  Import took 0.069457 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17bd7e5b2166946c34ae820473ab9fb') in 0.035872 seconds 
-  Import took 0.039423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efc8495f9d8693c6e69639c24af2209') in 0.036827 seconds 
-  Import took 0.040597 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59c3b010a629cbc873cd5c951bffda3') in 0.040687 seconds 
-  Import took 0.044415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757f72b2e2384d9456611d9d3168647c') in 0.038295 seconds 
-  Import took 0.041938 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.720574 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352b9e384de890c02ebeaf25c6a53247') in 0.031017 seconds 
-  Import took 0.035308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144d09cce942b7990a15200752768ad6') in 0.034923 seconds 
-  Import took 0.039210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f407e09f0764795ca4048c41e9eb144') in 0.039183 seconds 
-  Import took 0.042856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ca596e804e39aee5c988d178ef6bee') in 0.040865 seconds 
-  Import took 0.044823 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d81446eb7fad6219c4d4a56004e1b1c') in 0.038078 seconds 
-  Import took 0.041667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec047f087ab3aca58ddf415b1565512') in 0.036112 seconds 
-  Import took 0.039810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.175427 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7ef87591304edcab08757b7b37e65e') in 0.029058 seconds 
-  Import took 0.032698 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e31919df91e30b9db0f6833c4564f3') in 0.037865 seconds 
-  Import took 0.041738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a10bd0569a99da309ebd756eda76e1') in 0.037085 seconds 
-  Import took 0.040884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85208e51d6ab1db7489ed6dda69114e0') in 0.038721 seconds 
-  Import took 0.042878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5313a977a99c3a29332ecc9742b131f') in 0.040232 seconds 
-  Import took 0.045074 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa94ad629ac578a6ebc844d1bda8e69') in 0.038512 seconds 
-  Import took 0.042851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.519523 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b09a1c1733e21ef08d49e072dcbe7f7') in 0.029707 seconds 
-  Import took 0.033365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e467ca6e80c78a7947e9774df699166') in 0.037041 seconds 
-  Import took 0.040493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e14fc474fe03a6cbea6cf07434f701') in 0.037740 seconds 
-  Import took 0.041473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b632621aaafe867bd318e259ed164625') in 0.042558 seconds 
-  Import took 0.046275 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bf4b1d001da64b1dcbc99b5bf3a6a96') in 0.038525 seconds 
-  Import took 0.042377 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9a4218bb4ad10ea97a83d301d8042a') in 0.037008 seconds 
-  Import took 0.040393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.986471 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04e7773adbb7f31646d9a90395c162db') in 0.029657 seconds 
-  Import took 0.033141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '321cfd1e3c8fbc52b5b9e5d7751daa50') in 0.034175 seconds 
-  Import took 0.037851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921d8e909966e565c5961e558ad047a9') in 0.034814 seconds 
-  Import took 0.038286 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb900f72f3eb37ce32388d977797420f') in 0.035377 seconds 
-  Import took 0.038737 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e45d2225a1c76ab1b2f6503b6c1ed54') in 0.036409 seconds 
-  Import took 0.040066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ca774573f214f4558520f2b7f5b671') in 0.037179 seconds 
-  Import took 0.040466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.600734 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9317a1c791fd1e10a5187dc2fbed2eb') in 0.031114 seconds 
-  Import took 0.034992 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6054312090dc8329be33fc5b7099dbaa') in 0.039763 seconds 
-  Import took 0.043486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94383a4d68281e9308cd8b413e113c55') in 0.036763 seconds 
-  Import took 0.040717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d6e4b864100316a7fa160596c0ad359') in 0.036758 seconds 
-  Import took 0.040306 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450b614f02b6bc7480ca31efe8b61b3a') in 0.041295 seconds 
-  Import took 0.046275 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b6f4a50141a8bd0525882df3ba36fec') in 0.033809 seconds 
-  Import took 0.037280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.034206 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e24329c502f0c5285bd608032a47fc3') in 0.028889 seconds 
-  Import took 0.032228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f662b00d8714310e97ebc8d85f7efd') in 0.034447 seconds 
-  Import took 0.037724 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '215d967651ac62ab8b70b8c35a778b91') in 0.035807 seconds 
-  Import took 0.039671 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cecf062239ddd675ef77fa208d94b08') in 0.037711 seconds 
-  Import took 0.041544 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42c7c005f664ee928c977c178d85a37') in 0.038434 seconds 
-  Import took 0.042749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ad72483fe970c72ed68bcd34eac714') in 0.037611 seconds 
-  Import took 0.041154 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.397109 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d49b78c6dc1c0ed14e46e062de30777') in 0.032571 seconds 
-  Import took 0.036162 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b02ab9de993968bc8302bd07ec3e14') in 0.037105 seconds 
-  Import took 0.041511 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7710c2866c1bd92dfb345693c56a5759') in 0.038976 seconds 
-  Import took 0.042738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b00b6ac1dcb254c26c4ccdaf251b7de') in 0.041406 seconds 
-  Import took 0.044940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f687ad026ca4c958729f18f8e818e1e') in 0.038869 seconds 
-  Import took 0.043181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dacea61067bfa5df64500508bc0cdfe5') in 0.037297 seconds 
-  Import took 0.040959 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.785320 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a541c544e3d2ca6a9e86e47414da9511') in 0.029198 seconds 
-  Import took 0.032799 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d5713d76896123d8a0c000aad23b20') in 0.038593 seconds 
-  Import took 0.042555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23db89fb2bf4b69dd80ccbc3c8243b26') in 0.038967 seconds 
-  Import took 0.043169 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '955b0f2700ff6e6df1a86bcc92bed322') in 0.037523 seconds 
-  Import took 0.041278 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09016c77d84c167cee211266fcc837ec') in 0.038689 seconds 
-  Import took 0.042368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa38b5b5d5bc38855522bd1864a69b1') in 0.034723 seconds 
-  Import took 0.038686 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.793805 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3181ccf5421cda7d55beab38d9ff964') in 0.031178 seconds 
-  Import took 0.034975 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f328aa0fbcfaa1153c077689c1009216') in 0.037801 seconds 
-  Import took 0.042536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451dc9be7009905d1f647cdffdc25986') in 0.037673 seconds 
-  Import took 0.041739 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39004243e8cc7615e573189beaf4abb8') in 0.036019 seconds 
-  Import took 0.040492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '433335beab0ec37f654e6c622d863048') in 0.036038 seconds 
-  Import took 0.039794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec01829dc7d6e9a75151a1d74283b67') in 0.037429 seconds 
-  Import took 0.041278 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.424653 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bda47232b564abac42bc9f34b7c5c95') in 0.029090 seconds 
-  Import took 0.032755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb38496c4053b3a263cb146eaf4265b6') in 0.036637 seconds 
-  Import took 0.040440 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c40db41bd6dfc33943306d3cfae9a921') in 0.034733 seconds 
-  Import took 0.038104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809c1907d1c34a9553fb98215104b5f0') in 0.035941 seconds 
-  Import took 0.039793 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd03cb00be42a60f289a776648435cab') in 0.037822 seconds 
-  Import took 0.041874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8251b9ad8e641d79fee1aff81241c6ef') in 0.034747 seconds 
-  Import took 0.038316 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.885530 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b437ef9a2fa1c94b627e824a92b063') in 0.027916 seconds 
-  Import took 0.031759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409bec307ed15201691b5cec0cc0b079') in 0.035506 seconds 
-  Import took 0.038796 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11130558b1e2b51f8e06c7c643e16625') in 0.035914 seconds 
-  Import took 0.039304 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f05795a997399a18d097dbc890a1fd8b') in 0.036910 seconds 
-  Import took 0.041463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cadb65650e404bab1be7850b3f3efc5') in 0.036320 seconds 
-  Import took 0.040499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3912139f51a143b194de9d2fed40d5') in 0.036518 seconds 
-  Import took 0.040061 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.285295 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5eac001e68cdbb6c0396ae9fbefa9c') in 0.027428 seconds 
-  Import took 0.030798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6272c5f9b6be4ffd2cd45f63f4e667') in 0.035289 seconds 
-  Import took 0.038624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4ff09e77d1393b4cc6db1aea3f92e2') in 0.034950 seconds 
-  Import took 0.038468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bff2d119e3cfbae467853d3b2c292d5') in 0.033799 seconds 
-  Import took 0.037115 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d94c095beb885652f1215da5e2eab4') in 0.036760 seconds 
-  Import took 0.040326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0bc8365e7040da9d5637d4fbb1bc779') in 0.038098 seconds 
-  Import took 0.041709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.794845 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50374e9992c75f19b7a6ea3ec0f5bd59') in 0.035704 seconds 
-  Import took 0.039523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0d4149dd74d0d224f5213be60ff699') in 0.039678 seconds 
-  Import took 0.044594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe9998ce4034918d5f1f27decfe82d7') in 0.036097 seconds 
-  Import took 0.040874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f383251aa582c3717b6f79da38838c') in 0.037574 seconds 
-  Import took 0.042103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0abac75625e5a61bc7d35091a58906') in 0.037577 seconds 
-  Import took 0.042082 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad04b201f7547688f43c3657eb87a6ca') in 0.037875 seconds 
-  Import took 0.041449 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.586342 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed80f246bc45cfed350da4636272f8ce') in 0.032540 seconds 
-  Import took 0.037139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e49ad5cda1821621588542e538c1062') in 0.041840 seconds 
-  Import took 0.046088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fb227a2aca1618483b7063daf81e80') in 0.037606 seconds 
-  Import took 0.041718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7e5115c13de565f0a60fcea47df130') in 0.037795 seconds 
-  Import took 0.041559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f8fb9c9ed1d07790a73df010135c27') in 0.039415 seconds 
-  Import took 0.043595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feafe714795387688a42cbe548a27bae') in 0.036316 seconds 
-  Import took 0.040385 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.204992 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578a88abbe6dda51c7388923dba775dc') in 0.031073 seconds 
-  Import took 0.035189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1de76799d1273fc82d6d8908b2621c7') in 0.035687 seconds 
-  Import took 0.039278 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdf33cc7a76497aec71f4853d5c64360') in 0.037630 seconds 
-  Import took 0.041643 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201f3418378e61b490cf5600bdb7bd02') in 0.035805 seconds 
-  Import took 0.039226 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90325f402f3e8a3e84d1eff143bf8510') in 0.036226 seconds 
-  Import took 0.040028 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4d5fd4cc6698fcdca739ee76f1a9bb') in 0.035137 seconds 
-  Import took 0.038817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.790458 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30be068c2301fc1e4ef625b9dee3ca79') in 0.028472 seconds 
-  Import took 0.031904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd6899872d44fcf41c0be5defb86f43') in 0.035330 seconds 
-  Import took 0.039212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de704e30cc982e081d9f975bd6a1e227') in 0.035217 seconds 
-  Import took 0.038721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37e1769bad1c07e1af18afaa580a9f3') in 0.035027 seconds 
-  Import took 0.038514 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8c75ab91e9a4c1e9e3bf7751fed787') in 0.036849 seconds 
-  Import took 0.040252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf2c93815894312f1c1b68487587ebed') in 0.037929 seconds 
-  Import took 0.041628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.391278 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202c0f85a2cf6fce58f147fb58bce976') in 0.029868 seconds 
-  Import took 0.033368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '418c90325d8368e11278319b5ff0615f') in 0.036693 seconds 
-  Import took 0.040104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '320cd68e6edd0ed1b805447fbc837743') in 0.034994 seconds 
-  Import took 0.038913 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3ecec3b74ae705dfae62137d343d02') in 0.035911 seconds 
-  Import took 0.039665 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e27ab9db94a1b6e17d043496da6060') in 0.038527 seconds 
-  Import took 0.042339 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51e05a28445231a9e21a5d21fb69b8b0') in 0.035648 seconds 
-  Import took 0.039557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.405740 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1324f87a2992dd9fbbaaab259de60cee') in 0.029511 seconds 
-  Import took 0.033125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa14540caabd47d80e7f71c817c4863') in 0.035626 seconds 
-  Import took 0.040043 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa6b2b8c289e261b6a33782e39f1235') in 0.038322 seconds 
-  Import took 0.042239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0443c41b1e6c117129484ae1cf90c66a') in 0.041433 seconds 
-  Import took 0.045262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2f6f4eb0b19facdad99c9a276ca485') in 0.039555 seconds 
-  Import took 0.044090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f08737cd8a05ea56f7d38c21bbafbf') in 0.036026 seconds 
-  Import took 0.039730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.194461 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2418928cd6494e7c530247200c10fa88') in 0.028020 seconds 
-  Import took 0.032100 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd331be558be78920f881c2e9c42e76') in 0.036346 seconds 
-  Import took 0.039860 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '018fe079f8b61302fcefe688bc11b599') in 0.034892 seconds 
-  Import took 0.038200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7d0ee0584d17c2eaa887ebc8c4b340') in 0.038540 seconds 
-  Import took 0.042088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a6462b56659362087671abedcde8a1') in 0.038964 seconds 
-  Import took 0.042754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a12f266b26a0f6b1e137e624435a1f') in 0.036904 seconds 
-  Import took 0.041354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 171.915964 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556f8014942f3666ace1b68f134fac1b') in 0.029531 seconds 
-  Import took 0.034068 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b68e118f36f4f05aa1099bacf5c503') in 0.036386 seconds 
-  Import took 0.040374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad26c87b21f3839b86745ac0b2c43f9') in 0.037876 seconds 
-  Import took 0.042501 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e8bed04b6f2604c2bdea47a0d96103') in 0.036601 seconds 
-  Import took 0.040188 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b69a89980882dbea2b09f1447cf05fe') in 0.045440 seconds 
-  Import took 0.048897 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d371b69aad6962b07a6860681c6498') in 0.035051 seconds 
-  Import took 0.038366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.623899 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b9bb28fbc35e43e835ccbaf3be2412') in 0.029135 seconds 
-  Import took 0.032569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3368dd4e0fd3c98c9ef83658b43386') in 0.036081 seconds 
-  Import took 0.039448 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1ca0f08da172b2fe5c3ac15bda1082') in 0.036305 seconds 
-  Import took 0.040416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cff6afcf803d2e64d3e4f5968376b0e') in 0.037506 seconds 
-  Import took 0.041371 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee1d58ab8479f22a1552b33c15ca6b6d') in 0.040677 seconds 
-  Import took 0.044592 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3aed0b6609f3a4630860d5423a9910') in 0.038670 seconds 
-  Import took 0.042473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.016510 seconds.
-  path: Assets/UIPrefabs/enemyUI.prefab
-  artifactKey: Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUI.prefab using Guid(d92b225b19e3d7542a3dce2c9b78f7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cca36498e0c2e77be9f6b8d1674fc65') in 0.030735 seconds 
-  Import took 0.034478 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f55c3f6d28966a3ba1be9cb70a71e3c') in 0.034841 seconds 
-  Import took 0.038257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9f479ce0618ea682bf73d7baeee7b3') in 0.036769 seconds 
-  Import took 0.040005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b56149e67bcd613a3eb11be3e7ddc1') in 0.035242 seconds 
-  Import took 0.038747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3848b2ef8db19b808726c255e4257acf') in 0.036315 seconds 
-  Import took 0.040186 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671e18ad8fc42ed9503b3a985ee6e663') in 0.035803 seconds 
-  Import took 0.039647 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006526 seconds.
+Registered in 0.004872 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.936 seconds
+- Completed reload, in  1.211 seconds
 Domain Reload Profiling:
-	ReloadAssembly (937ms)
-		BeginReloadAssembly (130ms)
+	ReloadAssembly (1212ms)
+		BeginReloadAssembly (153ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (878ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (288ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (334ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2663.
+Total: 2.808800 ms (FindLiveObjects: 0.186000 ms CreateObjectMapping: 0.084400 ms MarkObjects: 2.520000 ms  DeleteObjects: 0.017500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 121.895891 seconds.
+  path: Assets/Scripts/Card.cs
+  artifactKey: Guid(351e795add7a8694ebc0b441e94b8d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Card.cs using Guid(351e795add7a8694ebc0b441e94b8d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80930f07bdc7854f5aebd231e64486da') in 0.006955 seconds 
+  Import took 0.010394 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006687 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.046 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1047ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (742ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (883ms)
 			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (258ms)
+			SetupTypeCache (296ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (269ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (325ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (170ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.6 MB.
-System memory in use after: 101.7 MB.
+System memory in use before: 97.3 MB.
+System memory in use after: 97.4 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2673.
-Total: 3.032900 ms (FindLiveObjects: 0.202600 ms CreateObjectMapping: 0.099000 ms MarkObjects: 2.709800 ms  DeleteObjects: 0.020200 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2665.
+Total: 3.303800 ms (FindLiveObjects: 0.227300 ms CreateObjectMapping: 0.101100 ms MarkObjects: 2.954800 ms  DeleteObjects: 0.018800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2330,57 +266,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 228.665414 seconds.
-  path: Assets/UIPrefabs/GameManager.prefab
-  artifactKey: Guid(a4744f2abd99ef747bc1034076e0a69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/GameManager.prefab using Guid(a4744f2abd99ef747bc1034076e0a69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f84b36812352d9362c5f64c4e1149b') in 0.028762 seconds 
-  Import took 0.032342 seconds .
+  Time since last request: 95.971191 seconds.
+  path: Assets/Scripts/Card.cs
+  artifactKey: Guid(351e795add7a8694ebc0b441e94b8d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Card.cs using Guid(351e795add7a8694ebc0b441e94b8d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1593675746c66777c0de507f1614413b') in 0.006479 seconds 
+  Import took 0.009816 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006830 seconds.
+Registered in 0.004676 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.135 seconds
+- Completed reload, in  1.047 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1135ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (1048ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (963ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (866ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (294ms)
+			SetupTypeCache (261ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (101ms)
-			SetupLoadedEditorAssemblies (361ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (387ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (253ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (284ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.6 MB.
-System memory in use after: 101.7 MB.
+System memory in use before: 97.3 MB.
+System memory in use after: 97.4 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2675.
-Total: 2.748300 ms (FindLiveObjects: 0.180300 ms CreateObjectMapping: 0.096900 ms MarkObjects: 2.451500 ms  DeleteObjects: 0.018700 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2667.
+Total: 2.986900 ms (FindLiveObjects: 0.215800 ms CreateObjectMapping: 0.110100 ms MarkObjects: 2.639900 ms  DeleteObjects: 0.019900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2392,100 +328,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004614 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.977 seconds
-Domain Reload Profiling:
-	ReloadAssembly (977ms)
-		BeginReloadAssembly (112ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (807ms)
-			LoadAssemblies (81ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (324ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (276ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (173ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.6 MB.
-System memory in use after: 101.7 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2677.
-Total: 4.027400 ms (FindLiveObjects: 0.277900 ms CreateObjectMapping: 0.183700 ms MarkObjects: 3.544400 ms  DeleteObjects: 0.020100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 33.298177 seconds.
-  path: Assets/UIPrefabs/enemyUISlimySlime.prefab
-  artifactKey: Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlimySlime.prefab using Guid(73ab4c1159fdf434e9aa44b9b3aa4bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f37314199e9c1a8ca6f1f1dc42610a') in 0.122563 seconds 
-  Import took 0.128165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/UIPrefabs/enemyUISlime.prefab
-  artifactKey: Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUISlime.prefab using Guid(b49a1a6d4f6019447b0564768931e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223a8999482d967048c629a9c4b9fa24') in 0.041304 seconds 
-  Import took 0.046174 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/UIPrefabs/enemyUIBomb.prefab
-  artifactKey: Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBomb.prefab using Guid(7a42a8a48ea487440b468498ec183d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7535991c251e24ffb7e69c452d943683') in 0.043630 seconds 
-  Import took 0.047847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/UIPrefabs/enemyUIBombSlime.prefab
-  artifactKey: Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBombSlime.prefab using Guid(bfa21361f9c1f66488f54f89b730a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2739b6d2f16b31aec84a08c507b0b7bf') in 0.035082 seconds 
-  Import took 0.038589 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/UIPrefabs/enemyUIBat.prefab
-  artifactKey: Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UIPrefabs/enemyUIBat.prefab using Guid(471f05bd83d8f5d428ee7fe466490738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda18dac40e473883e8d0800ef7bcdb4') in 0.034607 seconds 
-  Import took 0.038065 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
