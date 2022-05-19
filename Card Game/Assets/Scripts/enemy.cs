@@ -14,6 +14,7 @@ public class enemy : MonoBehaviour
     private healthBarSlider hpBar;
     private GameObject blockBar;
     private TMP_Text defenseText;
+    public Transform[] statusArea;
 
     private float enemyMaxHealth;
     private float enemyHealth = 0f;
