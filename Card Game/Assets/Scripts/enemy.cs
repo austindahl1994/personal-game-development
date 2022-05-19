@@ -6,7 +6,15 @@ using TMPro;
 
 public class enemy : MonoBehaviour
 {
-    public enemyStats stats; //scriptable object
+    //scriptable object
+    public enemyStats stats;
+
+    //all status sprites
+    public Sprite poisonSprite;
+    public Sprite strengthSprite;
+    public Sprite defenseSprite;
+    public Sprite vulnerableSprite;
+
 
     private Animator anim;
     private Camera cam;
@@ -14,6 +22,10 @@ public class enemy : MonoBehaviour
     private healthBarSlider hpBar;
     private GameObject blockBar;
     private TMP_Text defenseText;
+
+    public Image spriteImage;
+    public Transform statusArea;
+    public TMP_Text[] statusText;
 
     private float enemyMaxHealth;
     private float enemyHealth = 0f;
@@ -29,15 +41,9 @@ public class enemy : MonoBehaviour
         cam = Camera.main;
         addActions();
         Debug.Log("The enemy: " + this.gameObject + " has: " + actions.Count + " actions.");
-        posSetup(); //sets the original position of the gameObject enemy to the UI, parent is the one that
-        //calls this pos setup now
-
-        block = stats.startingBlock;
-        enemyMaxHealth = stats.health;
-        enemyHealth = enemyMaxHealth;
-        enemyName = stats.name;
-        updateBlock(); //displays original armor
-        hpBar.setHealth(enemyHealth, enemyMaxHealth); //sets the initial values for the enemy
+        posSetup(); //sets the original position of the gameObject enemy to the UI
+        setStartValues();
+        updateStatusBar();
     }
     public void UpdateEnemyHealth(float incomingDamage) //damage inc as a negative to lower defense/hp
     {
@@ -82,8 +88,7 @@ public class enemy : MonoBehaviour
     }
 
     public void doAllActions() {
-        if (enemyHealth <= 0)
-        {
+        if (enemyHealth <= 0) {
             return;
         }
         directHealth(this.poison);
@@ -92,6 +97,44 @@ public class enemy : MonoBehaviour
         }
         setBlock(0);
         takeTurn();
+    }
+
+    public void setStartValues() {
+        block = stats.startingBlock;
+        enemyMaxHealth = stats.health;
+        enemyHealth = enemyMaxHealth;
+        enemyName = stats.name;
+        updateBlock(); //displays original armor
+        hpBar.setHealth(enemyHealth, enemyMaxHealth); //sets the initial values for the enemy
+        statusArea = transform.parent.transform.GetChild(0).transform.GetChild(2).transform;
+    }
+
+    //go through each child, if sprite is not null make it's position the next one?
+    //other option, have each child start with sprite already? if amount for that sprite is 
+    //greater than 0 then turn it on? if active set at box location, move box right, if box more than
+    //certain x, set back to original x and change y to lower position?
+    //for each child of statusSpot (is statusSpot statusspotHolder? if so change name,
+    //check when more awake)
+    public void updateStatusBar() {
+        //int i = 0;
+        foreach (Transform child in statusArea) {
+            Debug.Log("The child is: " + child.name);
+            spriteImage = child.transform.GetChild(0).gameObject.GetComponent<Image>();
+            if (spriteImage.sprite == null) {
+                Debug.Log("No sprite");
+                break;
+            }
+            //Debug.Log("The child sprite is: " + spriteImage.sprite.name);
+            //child.transform.GetChild(0).
+        }
+    }
+
+    public void addStatus(Sprite sprite, int amount) {
+        
+    }
+    //will check each child for sprite, if matches clear, then update position?
+    public void clearStatus(Sprite sprite) { 
+        
     }
 
     public float getEnemyHealth() {
