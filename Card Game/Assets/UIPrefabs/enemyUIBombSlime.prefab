@@ -161,6 +161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bomb
       objectReference: {fileID: 0}
+    - target: {fileID: 5992304444356397979, guid: 42be58f9facd17b4da7754baf17abeee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42be58f9facd17b4da7754baf17abeee, type: 3}
 --- !u!1001 &5471089425772169702

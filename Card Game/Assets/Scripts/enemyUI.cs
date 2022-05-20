@@ -40,9 +40,10 @@ public class enemyUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
         enemy.gameObject.GetComponent<enemy>().updateBlock();
         enemy.gameObject.transform.SetSiblingIndex(2);
         enemy.gameObject.GetComponent<enemy>().UpdateEnemyHealth(0);
-        
+        enemy.gameObject.GetComponent<enemy>().updateStatusBar();
         //Debug.Log("Current enemy is: " + enemy);
     }
+
     public void OnPointerEnter(PointerEventData eventData) {
         image.color = showImage;
     }

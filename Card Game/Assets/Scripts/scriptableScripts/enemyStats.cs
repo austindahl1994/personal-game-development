@@ -25,4 +25,5 @@ public class enemyStats : ScriptableObject
     public bool healSelf;
     public bool healOthers;
     public Card canGiveCard;
+    public int actionsPerTurn;
 }

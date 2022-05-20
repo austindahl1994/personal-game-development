@@ -32,6 +32,7 @@ public class enemy : MonoBehaviour
     private int block;
     private int poison;
     private string enemyName;
+    public Dictionary<Sprite, int> status = new Dictionary<Sprite, int>();
     public List<string> actions = new List<string>();
     //make sure to create enemyUI prefab variant, then add enemy prefab to it with enemy stats scriptable
     private void Start()
@@ -40,51 +41,19 @@ public class enemy : MonoBehaviour
         setupBars();
         cam = Camera.main;
         addActions();
-        Debug.Log("The enemy: " + this.gameObject + " has: " + actions.Count + " actions.");
+        //Debug.Log("The enemy: " + this.gameObject + " has: " + actions.Count + " actions.");
         posSetup(); //sets the original position of the gameObject enemy to the UI
         setStartValues();
+        setupStatus();
         updateStatusBar();
     }
-    public void UpdateEnemyHealth(float incomingDamage) //damage inc as a negative to lower defense/hp
-    {
-        if (enemyHealth == stats.health && incomingDamage == 0) {
-            hpBar.setHealth(enemyHealth, enemyMaxHealth);
-        }
-        //Debug.Log("Update enemy health was called");
-        if (block >= incomingDamage) //defense is greater so no need to do anything else
-        {
-            block -= (int)incomingDamage;
-            updateBlock();
-            return;
-        }
-        else if (block != 0)
-        {
-            int reducedAmount = (int)incomingDamage - block;
-            block = 0;
-            updateBlock();
-            enemyHealth -= reducedAmount;
-        }
-        else {
-            enemyHealth -= (incomingDamage);
-        }
-        //Debug.Log("Enemy health after modification: " + enemyHealth + " and max health: " + enemyMaxHealth);
-        if (enemyHealth >= enemyMaxHealth)
-        {
-            enemyHealth = enemyMaxHealth;
-            hpBar.setHealth(enemyHealth, enemyMaxHealth);
-            //Debug.Log("The enemy now has: " + enemyHealth + " hp left.");
-        }
-        else if (enemyHealth <= 0)
-        {
-            enemyHealth = 0f;
-            hpBar.setHealth(0, enemyMaxHealth);
-            Die();
-        }
-        else {
-            //Debug.Log("The enemy took: " + -(mod) + " damage");
-            hpBar.setHealth(enemyHealth, enemyMaxHealth);
-            //Debug.Log("The enemy now has: " + enemyHealth + " hp left.");
-        }
+
+    private void setupStatus() {
+        status.Add(poisonSprite, 0);
+        status.Add(strengthSprite, 0);
+        status.Add(defenseSprite, 0);
+        status.Add(vulnerableSprite, 0);
+        //Debug.Log(status);
     }
 
     public void doAllActions() {
@@ -93,10 +62,18 @@ public class enemy : MonoBehaviour
         }
         directHealth(this.poison);
         if (this.poison > 0) {
+            //Debug.Log("The poison value is: " + poison);
             poison--;
+            //Debug.Log("The poison value is: " + poison);
         }
+        checkStatuses();
         setBlock(0);
         takeTurn();
+    }
+
+    public void checkStatuses() {
+        status[poisonSprite] = poison;
+        updateStatusBar();
     }
 
     public void setStartValues() {
@@ -116,16 +93,20 @@ public class enemy : MonoBehaviour
     //for each child of statusSpot (is statusSpot statusspotHolder? if so change name,
     //check when more awake)
     public void updateStatusBar() {
-        //int i = 0;
-        foreach (Transform child in statusArea) {
-            Debug.Log("The child is: " + child.name);
-            spriteImage = child.transform.GetChild(0).gameObject.GetComponent<Image>();
-            if (spriteImage.sprite == null) {
-                Debug.Log("No sprite");
-                break;
+        int i = 0;
+
+        foreach (Sprite key in status.Keys)
+        {
+            statusArea.transform.GetChild(i).gameObject.SetActive(false);
+            //Debug.Log("The value of: " + key + " is: " + status[key]);
+            if (status[key] != 0)
+            {
+                statusArea.transform.GetChild(i).gameObject.SetActive(true);
+                //Debug.Log(statusArea.transform.GetChild(i).gameObject.GetComponent<Image>().sprite);
+                statusArea.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = key;
+                statusArea.transform.GetChild(i).GetChild(0).GetComponent<TMP_Text>().text = status[key].ToString(); 
+                i++;
             }
-            //Debug.Log("The child sprite is: " + spriteImage.sprite.name);
-            //child.transform.GetChild(0).
         }
     }
 
@@ -158,8 +139,9 @@ public class enemy : MonoBehaviour
         Debug.Log("Next phase called");
         this.transform.SetAsLastSibling();
         this.GetComponentInParent<enemyUI>().updateEnemy();
-        this.gameObject.transform.position = new Vector3(0,0,-20);
+        this.gameObject.transform.position = new Vector3(0, 0, -20);
     }
+
 
     public void setParentFalse() {
         this.transform.parent.gameObject.SetActive(false);
@@ -178,6 +160,8 @@ public class enemy : MonoBehaviour
 
     public void addPoison(int amount) {
         this.poison += amount;
+        status[poisonSprite] += amount;
+        updateStatusBar();
     }
 
     public void setBlock(int input) {
@@ -246,6 +230,51 @@ public class enemy : MonoBehaviour
 
     public void showBuffIcons() { 
         
+    }
+
+    public void UpdateEnemyHealth(float incomingDamage) //damage inc as a negative to lower defense/hp
+    {
+        if (enemyHealth == stats.health && incomingDamage == 0)
+        {
+            hpBar.setHealth(enemyHealth, enemyMaxHealth);
+        }
+        //Debug.Log("Update enemy health was called");
+        if (block >= incomingDamage) //defense is greater so no need to do anything else
+        {
+            block -= (int)incomingDamage;
+            updateBlock();
+            return;
+        }
+        else if (block != 0)
+        {
+            int reducedAmount = (int)incomingDamage - block;
+            block = 0;
+            updateBlock();
+            enemyHealth -= reducedAmount;
+        }
+        else
+        {
+            enemyHealth -= (incomingDamage);
+        }
+        //Debug.Log("Enemy health after modification: " + enemyHealth + " and max health: " + enemyMaxHealth);
+        if (enemyHealth >= enemyMaxHealth)
+        {
+            enemyHealth = enemyMaxHealth;
+            hpBar.setHealth(enemyHealth, enemyMaxHealth);
+            //Debug.Log("The enemy now has: " + enemyHealth + " hp left.");
+        }
+        else if (enemyHealth <= 0)
+        {
+            enemyHealth = 0f;
+            hpBar.setHealth(0, enemyMaxHealth);
+            Die();
+        }
+        else
+        {
+            //Debug.Log("The enemy took: " + -(mod) + " damage");
+            hpBar.setHealth(enemyHealth, enemyMaxHealth);
+            //Debug.Log("The enemy now has: " + enemyHealth + " hp left.");
+        }
     }
 
     public void addActions() {
