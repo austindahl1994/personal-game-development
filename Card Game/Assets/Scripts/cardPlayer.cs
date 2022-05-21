@@ -15,25 +15,6 @@ public class cardPlayer : MonoBehaviour
         gm = FindObjectOfType<GameManager>();
         player = FindObjectOfType<player>();
     }
-    public void playTargetCard(Card cardPlayed, GameObject target)
-    {
-        if (target.name == "player")
-        {
-            Debug.Log("Player card played on");
-            if (cardPlayed.defense > 0)
-            {
-                target.GetComponent<player>().addBlock(cardPlayed.defense);
-            }
-        }
-        else {
-            Debug.Log(target.name);
-            gm.playerMana -= cardPlayed.manaCost;
-            //Debug.Log("Sending both: " + cardPlayed + " " + enemy);
-            target.gameObject.GetComponent<enemy>().addPoison(cardPlayed.poison);
-            target.gameObject.GetComponent<enemy>().UpdateEnemyHealth(cardPlayed.attack);
-            gm.moveToDiscardPile(cardPlayed);
-        }
-    }
 
     //if the card requires no target play it immediately
     public void playCard(Card cardPlayed)
@@ -42,15 +23,28 @@ public class cardPlayer : MonoBehaviour
         {
             player.GetComponent<player>().addBlock(cardPlayed.defense);
         }
+        dealAOE(cardPlayed.aoeAttack);
+        gm.playerMana -= cardPlayed.manaCost;
+        gm.moveToDiscardPile(cardPlayed);
+    }
+
+    public void playCard(Card cardPlayed, GameObject target)
+    {
+        if (cardPlayed.defense > 0)
+        {
+            player.GetComponent<player>().addBlock(cardPlayed.defense);
+        }
         //Debug.Log("Card received was: " + cardPlayed);
         //Debug.Log("Card has attack: " + cardPlayed.attack);
-        dealAOE(cardPlayed.attack);
+        target.gameObject.GetComponent<enemy>().addPoison(cardPlayed.poison);
+        target.gameObject.GetComponent<enemy>().UpdateEnemyHealth(cardPlayed.attack);
+        dealAOE(cardPlayed.aoeAttack);
         gm.playerMana -= cardPlayed.manaCost;
         gm.moveToDiscardPile(cardPlayed);
     }
     public void dealAOE(float damage)
     {
-        //Debug.Log("dealAOE called");
+        Debug.Log("dealAOE called for damage: " + damage);
         allEnemies.AddRange(gm.getAllEnemies());
         //Debug.Log("List of all enemies from cardPlayer: " + allEnemies);
         foreach (GameObject enemy in allEnemies)
@@ -59,4 +53,6 @@ public class cardPlayer : MonoBehaviour
         }
         allEnemies.Clear();
     }
+
+
 }

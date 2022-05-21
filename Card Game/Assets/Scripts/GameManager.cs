@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     private enemy enemy;
     private player player;
     //list of all the cards
-    public List<Card> allAvailableCards = new List<Card>();
-    public List<Card> allHiddenCards = new List<Card>();
+    public List<Card> allAvailableCards = new List<Card>(); //where cards are added from
+    public List<Card> allHiddenCards = new List<Card>(); //this in another list at beginning of run
     public List<Card> deck = new List<Card>();
     public List<Card> roundCards = new List<Card>();
     public List<Card> hand = new List<Card>();
@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     private int maxMana;
     public int playerMana;
     public bool cardIsSelected;
+    public int startNumberEnemies;
 
     //modded ints from relics
     public int modManaAdd;
@@ -56,7 +57,7 @@ public class GameManager : MonoBehaviour
         foreach (Card card in deck) {
             roundCards.Add(card);
         }
-        
+        startNumberEnemies = getAllEnemies().Count;
         drawAmount = 5; //this is for tests, use value that can be changed for actual game
         maxHandSize = 10; //to ensure cards can't go off screen, could be lower as a detriment?
         drawHand();
@@ -363,6 +364,7 @@ public class GameManager : MonoBehaviour
                 hand[i].handIndex = i;
                 hand[i].transform.position = cardSlotsOnBoard[i].position;
                 hand[i].transform.SetSiblingIndex(i);
+                //hand[i].gameObject.SetActive(true);
                 //Debug.Log("Sibling Index : " + hand[i].transform.GetSiblingIndex());
                 //Debug.Log("-----------------------------------");
             }
@@ -395,6 +397,7 @@ public class GameManager : MonoBehaviour
                 hand[i].handIndex = i;
                 hand[i].transform.position = cardSlotsOnBoard[i].position;
                 hand[i].transform.SetSiblingIndex(i);
+                //hand[i].gameObject.SetActive(true);
                 //Debug.Log("Sibling Index : " + hand[i].transform.GetSiblingIndex());
                 //Debug.Log("-----------------------------------");
             }

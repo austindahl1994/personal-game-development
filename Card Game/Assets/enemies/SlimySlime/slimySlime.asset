@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d5a844401c2bb1439ada73c69a4c10d, type: 3}
   m_Name: slimySlime
   m_EditorClassIdentifier: 
-  name: Slimy
+  name: Slimy Slime
   startingBlock: 0
   damage: 3
   poisonDamage: 0
   health: 33
   hasDeathEffect: 0
+  retainsBlock: 0
   attackAction: 1
   defendAction: 1
   hybrid: 1
@@ -30,4 +31,6 @@ MonoBehaviour:
   debuffAction: 0
   healSelf: 0
   healOthers: 0
+  corrosion: 0
   canGiveCard: {fileID: 0}
+  actionsPerTurn: 1

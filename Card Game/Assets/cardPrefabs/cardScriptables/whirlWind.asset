@@ -17,7 +17,16 @@ MonoBehaviour:
   artwork: {fileID: 21300000, guid: 3c7185112c6dff44990ed99cfff53f7a, type: 3}
   typeTarget: 0
   manaCost: 1
-  attack: 5
+  attack: 0
+  aoeAttack: 5
   defense: 0
   bleed: 0
   poison: 0
+  burn: 0
+  ignite: 0
+  special: 0
+  specialName: 
+  hasStartOfTurnEffect: 0
+  startOfTurnEffectName: 
+  hasEndOfTurnEffect: 0
+  endOfTurnEffectName: 

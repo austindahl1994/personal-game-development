@@ -63,7 +63,7 @@ public class enemyUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
         if (card1 != null) {
             card1.transform.localScale = new Vector3(1, 1, 1);
             //Debug.Log("Sending both: " + card1 + " " + enemy + "from ui script");
-            play.playTargetCard(card1, enemy);
+            play.playCard(card1, enemy);
         } else {
             //show a UI screen with montster information?
             //Debug.Log(card1);

@@ -31,5 +31,6 @@ MonoBehaviour:
   debuffAction: 0
   healSelf: 0
   healOthers: 0
+  corrosion: 0
   canGiveCard: {fileID: 0}
-  actionsPerTurn: 0
+  actionsPerTurn: 1

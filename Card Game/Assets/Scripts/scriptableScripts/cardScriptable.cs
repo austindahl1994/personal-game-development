@@ -14,7 +14,16 @@ public class cardScriptable : ScriptableObject
     public bool typeTarget; 
     public int manaCost;
     public int attack;
+    public int aoeAttack;
     public int defense;
     public int bleed;
     public int poison;
+    public int burn; //Does no damage but ignite deals the amount of damage, +initial
+    public bool ignite; //for burn
+    public bool special;
+    public string specialName;
+    public bool hasStartOfTurnEffect;
+    public string startOfTurnEffectName;
+    public bool hasEndOfTurnEffect;
+    public string endOfTurnEffectName;
 }

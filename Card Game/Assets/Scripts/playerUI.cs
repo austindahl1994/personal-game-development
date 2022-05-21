@@ -67,7 +67,7 @@ public class playerUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
         {
             card1.transform.localScale = new Vector3(1, 1, 1);
             //Debug.Log("Sending both: " + card1 + " " + enemy + "from ui script");
-            play.playTargetCard(card1, player);
+            play.playCard(card1, player);
         }
         else
         {
