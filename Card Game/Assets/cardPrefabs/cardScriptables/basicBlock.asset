@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f84d8581f447f243b5e96d8afdaadd6, type: 3}
   m_Name: basicBlock
   m_EditorClassIdentifier: 
-  name: 
+  name: Basic Block
   description: Gain def block
   artwork: {fileID: 21300000, guid: 3a6258b1ab24c8d44ab0d81cd819ab25, type: 3}
   typeTarget: 0

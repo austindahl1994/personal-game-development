@@ -25,6 +25,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     public bool typeTarget; 
     public int manaCost;
     public int attack;
+    public int aoeAttack;
     public int defense;
     public int poison;
     public int bleed;
@@ -45,6 +46,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         artworkImage.sprite = card.artwork;
         manaText.text = card.manaCost.ToString();
         attack = card.attack;
+        aoeAttack = card.aoeAttack;
         defense = card.defense;
         poison = card.poison;
         bleed = card.bleed;
@@ -158,7 +160,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         }
         else {
             this.transform.localScale = new Vector3(1, 1, 1);
-            Debug.Log("sending over: " + this);
+            //Debug.Log("sending over: " + this);
             play.playCard(this);
         }
     }
