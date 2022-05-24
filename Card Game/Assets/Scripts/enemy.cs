@@ -13,9 +13,25 @@ public class enemy : MonoBehaviour
 
     //all status sprites
     public Sprite poisonSprite;
-    public Sprite strengthSprite;
     public Sprite defenseSprite;
-    public Sprite vulnerableSprite;
+    public Sprite armorBreak;
+    public Sprite sunderedSprite;
+    public Sprite buffSprite;
+    public Sprite retainSprite;
+    public Sprite countdownSprite;
+    public Sprite regenSprite;
+    public Sprite burnSprite;
+
+    public Sprite attackIntentSprite;
+    public Sprite defendIntentSprite;
+    public Sprite summonIntentSprite;
+    public Sprite corrosionIntent;
+    public Sprite unknownIntentSprite;
+    public Sprite healSelfIntentSprite;
+    public Sprite healOthersIntentSprite;
+    public Sprite buffOthersIntentSprite;
+    public Sprite giveCardIntentSprite;
+    public Sprite curseIntentSprite;
 
 
     private Animator anim;
@@ -25,28 +41,27 @@ public class enemy : MonoBehaviour
     private GameObject blockBar;
     private TMP_Text defenseText;
 
-    public Image spriteImage;
+    private Sprite spriteImage;
     public Transform statusArea;
-    public TMP_Text[] statusText;
+    public Transform intentArea;
 
     private float enemyMaxHealth;
     private float enemyHealth = 0f;
     private int damage;
     private int defense;
     private int block;
-    private int poison;
+    private int buffAmount;
     private string enemyName;
     public Dictionary<Sprite, int> status = new Dictionary<Sprite, int>();
     public List<string> actions = new List<string>();
     public List<string> nextAction = new List<string>();
     private int totalActions;
+    private int countDownTimer;
     //need to add coroutines that go in order for each enemy, so it shows blocking damage and such
 
     private void Start()
     {
         gm = FindObjectOfType<GameManager>();
-        damage = stats.damage; //should have a function that updates the damage based on add/multiply factors
-        defense = stats.defense;
         this.anim = GetComponent<Animator>();
         player = FindObjectOfType<player>();
         setupBars();
@@ -63,62 +78,115 @@ public class enemy : MonoBehaviour
 
     private void setupStatus() {
         status.Add(poisonSprite, 0);
-        status.Add(strengthSprite, 0);
         status.Add(defenseSprite, 0);
-        status.Add(vulnerableSprite, 0);
+        status.Add(armorBreak, 0);
+        status.Add(sunderedSprite, 0);
+        status.Add(buffSprite, 0);
+        status.Add(retainSprite, 0);
+        status.Add(countdownSprite, 0);
+        status.Add(regenSprite, 0);
+        status.Add(burnSprite, 0);
         //Debug.Log(status);
     }
 
     public void setIntent() {
+        int i;
         //Debug.Log(this.gameObject + "has amount of actions:" + stats.actionsPerTurn);
-        for (int i = 0; i < this.stats.actionsPerTurn; i++) {
+        for (i = 0; i < stats.actionsPerTurn; i++) {
             if (totalActions >= stats.actionsPerTurn) {
-                string temp = actions[Random.Range(0, actions.Count - 1)];
-                nextAction.Add(temp);
+                nextAction.Add(actions[Random.Range(0, actions.Count - 1)]);
             }
         }
+        for (i = 0; i < intentArea.transform.childCount; i++) {
+            intentArea.transform.GetChild(i).gameObject.SetActive(false);
+        }
+
+        showIntent(nextAction[0], 0);
+        
         //modify some value attached to object based on each action in nextAction
 
-       // Debug.Log(this.gameObject);
-       // Debug.Log(nextAction.Count);
+        // Debug.Log(this.gameObject);
+        // Debug.Log(nextAction.Count);
     }
 
     public void decrementAllStatuses() {
         if (status[poisonSprite] > 0) {
             status[poisonSprite]--;
         }
-        if (status[vulnerableSprite] > 0) {
-            status[vulnerableSprite]--;
+        if (status[armorBreak] > 0) {
+            status[armorBreak]--;
         }
         if (status[defenseSprite] > 0) {
             status[defenseSprite]--;
         }
-        if (status[strengthSprite] > 0) {
-            status[strengthSprite]--;
+        if (status[sunderedSprite] > 0) {
+            status[sunderedSprite]--;
+        }
+        if (status[buffSprite] > 0){
+            status[buffSprite]--;
+        }
+        if (status[retainSprite] > 0){
+            status[retainSprite]--;
+        }
+        if (status[countdownSprite] > 0){
+            status[countdownSprite]--;
+        }
+        if (status[regenSprite] > 0){
+            status[regenSprite]--;
+        }
+        if (status[burnSprite] > 0){
+            status[burnSprite]--;
+        }
+
+        updateStatusBar();
+    }
+
+    public void increaseAllStatuses() {
+        if (status[poisonSprite] > 0){
+            status[poisonSprite]++;
+        }
+        if (status[armorBreak] > 0){
+            status[armorBreak]++;
+        }
+        if (status[defenseSprite] > 0){
+            status[defenseSprite]++;
+        }
+        if (status[sunderedSprite] > 0){
+            status[sunderedSprite]++;
+        }
+        if (status[buffSprite] > 0){
+            status[buffSprite]++;
+        }
+        if (status[retainSprite] > 0){
+            status[retainSprite]++;
+        }
+        if (status[countdownSprite] > 0){
+            status[countdownSprite]++;
+        }
+        if (status[regenSprite] > 0){
+            status[regenSprite]++;
+        }
+        if (status[burnSprite] > 0){
+            status[burnSprite]++;
         }
         updateStatusBar();
     }
 
-    public void increaseAllStatuses() { 
-        
-    }
-
     public void setStartValues() {
+        damage = stats.damage;
+        defense = stats.defense;
+        buffAmount = stats.buffAmount;
         block = stats.startingBlock;
         enemyMaxHealth = stats.health;
         enemyHealth = enemyMaxHealth;
         enemyName = stats.name;
+        countDownTimer = 3;
         updateBlock(); //displays original armor
-        hpBar.setHealth(enemyHealth, enemyMaxHealth); //sets the initial values for the enemy
+        hpBar.setHealth(enemyHealth, enemyMaxHealth); //sets the initial values for the enemy 
         statusArea = transform.parent.transform.GetChild(0).transform.GetChild(2).transform;
+        intentArea = transform.parent.transform.GetChild(0).transform.GetChild(3).transform;
     }
 
-    //go through each child, if sprite is not null make it's position the next one?
-    //other option, have each child start with sprite already? if amount for that sprite is 
-    //greater than 0 then turn it on? if active set at box location, move box right, if box more than
-    //certain x, set back to original x and change y to lower position?
-    //for each child of statusSpot (is statusSpot statusspotHolder? if so change name,
-    //check when more awake)
     public void updateStatusBar() {
         int i = 0;
 
@@ -136,11 +204,7 @@ public class enemy : MonoBehaviour
             }
         }
     }
-
-    public void addStatus(Sprite sprite, int amount) {
-        
-    }
-    //will check each child for sprite, if matches clear, then update position?
+    
     public void clearStatus(Sprite sprite) { 
         
     }
@@ -168,7 +232,6 @@ public class enemy : MonoBehaviour
         this.GetComponentInParent<enemyUI>().updateEnemy();
         this.gameObject.transform.position = new Vector3(0, 0, -20);
     }
-
 
     public void setParentFalse() {
         this.transform.parent.gameObject.SetActive(false);
@@ -266,7 +329,7 @@ public class enemy : MonoBehaviour
         foreach (string action in nextAction) {
             StartCoroutine(action);
         }
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.9f);
         nextAction.Clear();
         setIntent();
         gm.nextEnemyTurn(++index);
@@ -283,7 +346,7 @@ public class enemy : MonoBehaviour
         {
             hpBar.setHealth(enemyHealth, enemyMaxHealth);
         }
-        //Debug.Log("Update enemy health was called");
+        //Debug.Log("Update enemy health was called"); 
         if (block >= incomingDamage) //defense is greater so no need to do anything else
         {
             block -= (int)incomingDamage;
@@ -321,67 +384,68 @@ public class enemy : MonoBehaviour
             //Debug.Log("The enemy now has: " + enemyHealth + " hp left.");
         }
     }
+    //I hate all the code beyond this point
+    public void showIntent(string intent, int index) {
+        int num = 0;
+        //Debug.Log("Index and string sent: " + index + " " + intent);
+        if (intent == "attack") { spriteImage = attackIntentSprite;  num = damage; }
+        if (intent == "defend") { spriteImage = defendIntentSprite; num = defense; }
+        if (intent == "countDown") { spriteImage = countdownSprite; num = countDownTimer; }
+        if (intent == "poisonPlayer") { spriteImage = poisonSprite; num = stats.poisonDamage; }
+        if (intent == "curse") { spriteImage = curseIntentSprite; num = 0; }
+        if (intent == "summon") { spriteImage = summonIntentSprite; num = 0; }
+        if (intent == "buffSelf") { spriteImage = buffSprite; num = buffAmount; }
+        if (intent == "buffOthers") { spriteImage = buffOthersIntentSprite; num = 0; }
+        if (intent == "healSelf") { spriteImage = healSelfIntentSprite; num = stats.healSelfAmount; }
+        if (intent == "regenSelf") { spriteImage = regenSprite; num = stats.regenSelfAmount; }
+        if (intent == "healOthers") { spriteImage = healOthersIntentSprite; num = stats.healOthersAmount; }
+        if (intent == "corrosion") { spriteImage = corrosionIntent; num = 0; }
+        if (intent == "canGiveCard") { spriteImage = giveCardIntentSprite; num = 0; }
+        //Debug.Log("Action at index " + index + " is: " + nextAction[index]);
+        //nextAction.RemoveAt(index);
+        intentArea.transform.GetChild(index).gameObject.SetActive(true);
+        //Debug.Log(statusArea.transform.GetChild(i).gameObject.GetComponent<Image>().sprite);
+        intentArea.transform.GetChild(index).gameObject.GetComponent<Image>().sprite = spriteImage;
+        if (num == 0)
+        {
+            intentArea.transform.GetChild(index).GetChild(0).GetComponent<TMP_Text>().text = " ";
+        }
+        else {
+            intentArea.transform.GetChild(index).GetChild(0).GetComponent<TMP_Text>().text = num.ToString();
+        }
 
-    public void addActions() {
-        if (stats.attackAction) {
-            actions.Add("attack");
-        }
-        if (stats.defendAction)
+        index++;
+
+        if (index >= stats.actionsPerTurn)
         {
-            actions.Add("defend");
+            return;
         }
-        if (stats.hybrid)
-        {
-            actions.Add("hybrid");
-        }
-        if (stats.countdownAction)
-        {
-            actions.Add("countDown");
-        }
-        if (stats.poisonAction)
-        {
-            actions.Add("poisonPlayer");
-        }
-        if (stats.curseAction)
-        {
-            actions.Add("curse");
-        }
-        if (stats.summonAction)
-        {
-            actions.Add("summon");
-        }
-        if (stats.buffSelfAction)
-        {
-            actions.Add("buffSelf");
-        }
-        if (stats.buffOthersAction)
-        {
-            actions.Add("buffOthers");
-        }
-        if (stats.debuffAction)
-        {
-            actions.Add("debuff");
-        }
-        if (stats.healSelf)
-        {
-            actions.Add("healSelf");
-        }
-        if (stats.healOthers)
-        {
-            actions.Add("healOthers");
-        }
-        if (stats.corrosion)
-        {
-            actions.Add("corrosion");
-        }
-        if (stats.canGiveCard)
-        {
-            actions.Add("canGiveCard");
+        else {
+            showIntent(nextAction[index], index);
         }
     }
 
+    public void addActions() {
+        if (stats.damage > 0 && !stats.countdownAction) { actions.Add("attack"); }
+        if (stats.defense > 0) { actions.Add("defend"); }
+        if (stats.countdownAction) { actions.Add("countDown"); }
+        if (stats.poisonDamage > 0) { actions.Add("poisonPlayer");}
+        if (stats.regenSelfAmount > 0) {actions.Add("regenSelf");}
+        if (stats.curseAction){actions.Add("curse");}
+        if (stats.summon != null){actions.Add("summon");}
+        if (stats.buffSelfAction){actions.Add("buffSelf");}
+        if (stats.buffOthersAction){actions.Add("buffOthers");}
+        if (stats.weakenAction){actions.Add("weaken");}
+        if (stats.sunderAction){actions.Add("sunder");}
+        if (stats.healSelfAmount > 0){actions.Add("healSelf");}
+        if (stats.healOthersAmount > 0){actions.Add("healOtherEnemies");}
+        if (stats.corrosionAmount > 0){actions.Add("corrosion");}
+        if (stats.canGiveCard != null){actions.Add("canGiveCard");}
+        if (stats.burnDamage > 0) {actions.Add("burn");}
+    }
+
     IEnumerator attack() {
-        Debug.Log(this.gameObject + " is attacking!");
+        Debug.Log(this.gameObject + " is attacking for: " + damage);
         player.GetComponent<player>().updatePlayerHealth(damage);
         yield return null;
     }
@@ -391,65 +455,54 @@ public class enemy : MonoBehaviour
         addBlock(defense);
         yield return null;
     }
-    IEnumerator hybrid()
-    {
-        Debug.Log(this.gameObject + " is attacking and defending!");
-        player.GetComponent<player>().updatePlayerHealth(damage);
-        addBlock(defense);
-        yield return null;
-    }
     IEnumerator countDown()
     {
         Debug.Log(this.gameObject + " is counting down!");
+        countDownTimer--;
+        if (countDownTimer <= 0) {
+            //do explode animation
+            player.gameObject.GetComponent<player>().updatePlayerHealth(damage);
+            UpdateEnemyHealth(-999);
+        }
         yield return null;
     }
-    IEnumerator poisonPlayer()
-    {
+    IEnumerator poisonPlayer(){
         Debug.Log(this.gameObject + " is poisoning player!");
         yield return null;
     }
-    IEnumerator curse()
-    {
+    IEnumerator curse(){
         Debug.Log(this.gameObject + " is cursing player!");
         yield return null;
     }
-    IEnumerator summon()
-    {
+    IEnumerator summon(){
         Debug.Log(this.gameObject + " is summoning minion!");
         yield return null;
     }
-    IEnumerator buffSelf()
-    {
+    IEnumerator buffSelf(){
         Debug.Log(this.gameObject + " is buffing self!");
         yield return null;
     }
-    IEnumerator buffOthers()
-    {
+    IEnumerator buffOthers(){
         Debug.Log(this.gameObject + " is buffing others!");
         yield return null;
     }
-    IEnumerator debuff()
-    {
+    IEnumerator debuff(){
         Debug.Log(this.gameObject + " is debuffing player!");
         yield return null;
     }
-    IEnumerator healself()
-    {
+    IEnumerator healself(){
         Debug.Log(this.gameObject + " is healing self!");
         yield return null;
     }
-    IEnumerator healOthers()
-    {
+    IEnumerator healOtherEnemies(){
         Debug.Log(this.gameObject + " is healing others!");
         yield return null;
     }
-    IEnumerator corrosion()
-    {
+    IEnumerator corrosion(){
         Debug.Log(this.gameObject + " is corroding armor!");
         yield return null;
     }
-    IEnumerator canGiveCard()
-    {
+    IEnumerator canGiveCard(){
         Debug.Log(this.gameObject + " is giving card!");
         yield return null;
     }

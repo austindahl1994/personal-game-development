@@ -13,26 +13,25 @@ MonoBehaviour:
   m_Name: bat
   m_EditorClassIdentifier: 
   name: Bat
+  actionsPerTurn: 2
   startingBlock: 0
-  damage: 0
-  defense: 0
-  poisonDamage: 0
+  damage: 7
+  defense: 2
+  poisonDamage: 2
   health: 25
-  hasDeathEffect: 0
-  retainsBlock: 0
-  attackAction: 1
-  defendAction: 0
-  hybrid: 0
-  countdownAction: 0
-  poisonAction: 0
-  curseAction: 0
-  summonAction: 0
+  burnDamage: 0
+  regenSelfAmount: 0
+  healSelfAmount: 0
+  healOthersAmount: 0
+  corrosionAmount: 0
+  buffAmount: 0
   buffSelfAction: 0
   buffOthersAction: 0
-  debuffAction: 0
-  healSelf: 0
-  healOthers: 0
-  healAmount: 0
-  corrosion: 0
+  hasDeathEffect: 0
+  retainsBlock: 0
+  countdownAction: 0
+  curseAction: 0
+  weakenAction: 0
+  sunderAction: 0
+  summon: {fileID: 0}
   canGiveCard: {fileID: 0}
-  actionsPerTurn: 1

@@ -117,10 +117,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 0}
   poisonSprite: {fileID: 21300000, guid: 468a014fa9dac394cadae8b168f9e57b, type: 3}
-  strengthSprite: {fileID: 21300000, guid: eb7bf9a654cb88f448a1ff30c93420ad, type: 3}
   defenseSprite: {fileID: 21300000, guid: 5a18e7d6fdc8dfa4591ee85e63cf6e6f, type: 3}
-  vulnerableSprite: {fileID: 21300000, guid: ac4ee2daf7587214fbc9d064819c0a3d, type: 3}
-  spriteRenderer: {fileID: 0}
+  armorBreak: {fileID: 21300000, guid: ac4ee2daf7587214fbc9d064819c0a3d, type: 3}
+  sunderedSprite: {fileID: 21300000, guid: e3177b0f3b161c44bb0071d7a0fca5c2, type: 3}
+  buffSprite: {fileID: 21300000, guid: db592f8b3391a9e4eac605ee64e5b48b, type: 3}
+  retainSprite: {fileID: 21300000, guid: 117fd1d2ce64b0b48a8125cb10b9bdd5, type: 3}
+  countdownSprite: {fileID: 21300000, guid: 88debdd7c8e122c44a019efd489320ea, type: 3}
+  regenSprite: {fileID: 21300000, guid: b1df621c7a2c3f54b8912f7f44be2ca6, type: 3}
+  burnSprite: {fileID: 21300000, guid: c38332280703710468ce77af27b9f7cc, type: 3}
+  attackIntentSprite: {fileID: 21300000, guid: 95e1ac2d1c7bd8747b41069e8d9c218b, type: 3}
+  defendIntentSprite: {fileID: 21300000, guid: 3a6258b1ab24c8d44ab0d81cd819ab25, type: 3}
+  summonIntentSprite: {fileID: 21300000, guid: ba2e7064d06523b4295284de390b2cc8, type: 3}
+  corrosionIntent: {fileID: 21300000, guid: 91e2a884e14d02747bc77a3c46a11bb7, type: 3}
+  unknownIntentSprite: {fileID: 21300000, guid: d657992135f2386429f9ab2007ccd77a, type: 3}
+  healSelfIntentSprite: {fileID: 21300000, guid: 94a1b2198f677b74fa7845207d6268b9, type: 3}
+  healOthersIntentSprite: {fileID: 21300000, guid: f7e8ef0ef62356c4382ce6cdfa1445c0, type: 3}
+  buffOthersIntentSprite: {fileID: 21300000, guid: c53a6d4935e292c41acaf7363c78f7a6, type: 3}
+  giveCardIntentSprite: {fileID: 21300000, guid: 7dc2e29007c8c154f9d70a32608a53bc, type: 3}
+  curseIntentSprite: {fileID: 21300000, guid: 76eec66c8ac45244595dfe53aaa35af6, type: 3}
   statusArea: {fileID: 0}
-  statusText: []
+  intentArea: {fileID: 0}
   actions: []
+  nextAction: []

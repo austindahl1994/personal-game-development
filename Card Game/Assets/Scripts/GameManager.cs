@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     //modded ints from relics
     public int modManaAdd;
     public int modManaMultiply;
+    private bool waitingForNextTurn;
     private void Start()
     {
         enemyStartingIndex = 0;
@@ -196,6 +197,10 @@ public class GameManager : MonoBehaviour
 
     //clears the hand, putting all into discard list and setting active
     public void endTurn() {
+        if (waitingForNextTurn) {
+            return;
+        }
+        waitingForNextTurn = true;
         foreach (Card card in hand) {
             card.isInHand = false;
             card.gameObject.SetActive(false);
@@ -216,6 +221,7 @@ public class GameManager : MonoBehaviour
         //if does have child that then do that enemy turn
         if (index >= enemyCoveringUI.Length) {
             player.GetComponent<player>().setBlock(0);
+            waitingForNextTurn = false;
             startPlayerTurn();
         } else if (enemyCoveringUI[index].childCount == 0 ||
                     !enemyCoveringUI[index].GetChild(0).gameObject.activeInHierarchy ||
