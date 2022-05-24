@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Bomb Slime
   startingBlock: 5
   damage: 5
-  defense: 0
+  defense: 5
   poisonDamage: 0
   health: 5
   hasDeathEffect: 0

@@ -9,6 +9,7 @@ public class enemy : MonoBehaviour
     //scriptable object
     public enemyStats stats;
     private player player;
+    private GameManager gm;
 
     //all status sprites
     public Sprite poisonSprite;
@@ -31,6 +32,7 @@ public class enemy : MonoBehaviour
     private float enemyMaxHealth;
     private float enemyHealth = 0f;
     private int damage;
+    private int defense;
     private int block;
     private int poison;
     private string enemyName;
@@ -42,7 +44,9 @@ public class enemy : MonoBehaviour
 
     private void Start()
     {
+        gm = FindObjectOfType<GameManager>();
         damage = stats.damage; //should have a function that updates the damage based on add/multiply factors
+        defense = stats.defense;
         this.anim = GetComponent<Animator>();
         player = FindObjectOfType<player>();
         setupBars();
@@ -79,33 +83,20 @@ public class enemy : MonoBehaviour
        // Debug.Log(nextAction.Count);
     }
 
-    public void doAllActions() {
-        if (enemyHealth <= 0) {
-            return;
-        }
-        directHealth(status[poisonSprite]);
-        decrementAllStatuses();
-        updateStatusBar();
-        setBlock(0);
-        takeTurn();
-    }
-
     public void decrementAllStatuses() {
         if (status[poisonSprite] > 0) {
             status[poisonSprite]--;
         }
-        if (status[vulnerableSprite] > 0)
-        {
+        if (status[vulnerableSprite] > 0) {
             status[vulnerableSprite]--;
         }
-        if (status[defenseSprite] > 0)
-        {
+        if (status[defenseSprite] > 0) {
             status[defenseSprite]--;
         }
-        if (status[strengthSprite] > 0)
-        {
+        if (status[strengthSprite] > 0) {
             status[strengthSprite]--;
         }
+        updateStatusBar();
     }
 
     public void increaseAllStatuses() { 
@@ -254,14 +245,32 @@ public class enemy : MonoBehaviour
         //Debug.Log("This current position: " + this.gameObject.transform.position);
     }
 
-    public void takeTurn() {
+    public void doAllActions(int index)
+    {
+        directHealth(status[poisonSprite]);
+        decrementAllStatuses();
+        if (this.enemyHealth <= 0)
+        {
+            gm.nextEnemyTurn(++index);
+            return;
+        }
+        else
+        {
+            StartCoroutine(takeTurn(index));
+        }
+    }
+
+    public IEnumerator takeTurn(int index) {
         Debug.Log("Take turn now is: " + this);
-        //invoke(foo(), 3.0f);
+        //Debug.Log(index);
         foreach (string action in nextAction) {
             StartCoroutine(action);
         }
+        yield return new WaitForSeconds(0.6f);
         nextAction.Clear();
         setIntent();
+        gm.nextEnemyTurn(++index);
+        yield return null;
     }
 
     public void showBuffIcons() { 
@@ -379,11 +388,14 @@ public class enemy : MonoBehaviour
     IEnumerator defend()
     {
         Debug.Log(this.gameObject + " is defending!");
+        addBlock(defense);
         yield return null;
     }
     IEnumerator hybrid()
     {
         Debug.Log(this.gameObject + " is attacking and defending!");
+        player.GetComponent<player>().updatePlayerHealth(damage);
+        addBlock(defense);
         yield return null;
     }
     IEnumerator countDown()

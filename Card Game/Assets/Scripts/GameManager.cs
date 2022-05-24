@@ -40,12 +40,13 @@ public class GameManager : MonoBehaviour
     public int playerMana;
     public bool cardIsSelected;
     public int startNumberEnemies;
-
+    public int enemyStartingIndex;
     //modded ints from relics
     public int modManaAdd;
     public int modManaMultiply;
     private void Start()
     {
+        enemyStartingIndex = 0;
         player = FindObjectOfType<player>();
         modManaAdd = 0;
         modManaMultiply = 1;
@@ -202,15 +203,28 @@ public class GameManager : MonoBehaviour
         }
         hand.Clear();
         //start enemy turn??
-        startEnemyTurn();
+        foreach (GameObject enemy in getAllEnemies())
+        {
+            enemy.GetComponent<enemy>().setBlock(0);
+        }
+        nextEnemyTurn(enemyStartingIndex);
     }
 
-    private void startEnemyTurn() {
-        foreach (GameObject enemy in getAllEnemies()) {
-            enemy.GetComponent<enemy>().doAllActions();
+    public void nextEnemyTurn(int index) {
+        //3 different tests, if it is no child, or is not active, increment index go next
+        //if index great than enemyslots.length set index to zero and player turn
+        //if does have child that then do that enemy turn
+        if (index >= enemyCoveringUI.Length) {
+            player.GetComponent<player>().setBlock(0);
+            startPlayerTurn();
+        } else if (enemyCoveringUI[index].childCount == 0 ||
+                    !enemyCoveringUI[index].GetChild(0).gameObject.activeInHierarchy ||
+                    enemyCoveringUI[index].GetChild(0).gameObject == null) {
+            index++;
+            nextEnemyTurn(index);
+        } else {
+            enemyCoveringUI[index].GetChild(0).GetChild(2).gameObject.GetComponent<enemy>().doAllActions(index);
         }
-        player.GetComponent<player>().setBlock(0);
-        startPlayerTurn();
     }
 
     private void drawHand() {
