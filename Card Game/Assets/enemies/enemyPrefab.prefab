@@ -126,7 +126,7 @@ MonoBehaviour:
   regenSprite: {fileID: 21300000, guid: b1df621c7a2c3f54b8912f7f44be2ca6, type: 3}
   burnSprite: {fileID: 21300000, guid: c38332280703710468ce77af27b9f7cc, type: 3}
   attackIntentSprite: {fileID: 21300000, guid: 95e1ac2d1c7bd8747b41069e8d9c218b, type: 3}
-  defendIntentSprite: {fileID: 21300000, guid: 3a6258b1ab24c8d44ab0d81cd819ab25, type: 3}
+  defendIntentSprite: {fileID: 21300000, guid: 5a18e7d6fdc8dfa4591ee85e63cf6e6f, type: 3}
   summonIntentSprite: {fileID: 21300000, guid: ba2e7064d06523b4295284de390b2cc8, type: 3}
   corrosionIntent: {fileID: 21300000, guid: 91e2a884e14d02747bc77a3c46a11bb7, type: 3}
   unknownIntentSprite: {fileID: 21300000, guid: d657992135f2386429f9ab2007ccd77a, type: 3}
@@ -139,3 +139,4 @@ MonoBehaviour:
   intentArea: {fileID: 0}
   actions: []
   nextAction: []
+  hasTakenTurn: 0

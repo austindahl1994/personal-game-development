@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
     public int modManaAdd;
     public int modManaMultiply;
     private bool waitingForNextTurn;
+    public bool isPlayerTurn;
+    private int totalEnemiesAtTurnStart;
     private void Start()
     {
         enemyStartingIndex = 0;
@@ -68,18 +70,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        //Card selectedCard = hand[0]; why is this here?
         deckAmountText.text = roundCards.Count.ToString(); //text for draw pile
         discardAmountText.text = discard.Count.ToString(); //text for discard pile
         mana.text = playerMana.ToString(); //text for mana
         currentHandSize = hand.Count;
-        if (Input.GetKeyDown("r")) {
-            //DrawCard();
-            foreach (Card card in this.hand)
-            {
-                Debug.Log("Checking: " + card + "with it being in hand: " + card.isInHand);
-            }
-        }
     }
 
     public void setEnemyPos() { //have this similar to 
@@ -197,6 +191,7 @@ public class GameManager : MonoBehaviour
 
     //clears the hand, putting all into discard list and setting active
     public void endTurn() {
+        isPlayerTurn = false;
         if (waitingForNextTurn) {
             return;
         }
@@ -207,30 +202,46 @@ public class GameManager : MonoBehaviour
             discard.Add(card);
         }
         hand.Clear();
+        totalEnemiesAtTurnStart = 0;
         //start enemy turn??
         foreach (GameObject enemy in getAllEnemies())
         {
             enemy.GetComponent<enemy>().setBlock(0);
+            totalEnemiesAtTurnStart++;
         }
         nextEnemyTurn(enemyStartingIndex);
     }
 
     public void nextEnemyTurn(int index) {
-        //3 different tests, if it is no child, or is not active, increment index go next
-        //if index great than enemyslots.length set index to zero and player turn
-        //if does have child that then do that enemy turn
-        if (index >= enemyCoveringUI.Length) {
-            player.GetComponent<player>().setBlock(0);
-            waitingForNextTurn = false;
+        if (isPlayerTurn) {
+            return;
+        }
+        int temp = 0;
+        if (temp == totalEnemiesAtTurnStart) {
+            enemyStartingIndex = 0;
+            startPlayerTurn();
+        } else if (index >= enemyCoveringUI.Length) {
+            enemyStartingIndex = 0;
             startPlayerTurn();
         } else if (enemyCoveringUI[index].childCount == 0 ||
                     !enemyCoveringUI[index].GetChild(0).gameObject.activeInHierarchy ||
                     enemyCoveringUI[index].GetChild(0).gameObject == null) {
             index++;
+            setCurrentIndex(index);
             nextEnemyTurn(index);
         } else {
+            setCurrentIndex(index);
             enemyCoveringUI[index].GetChild(0).GetChild(2).gameObject.GetComponent<enemy>().doAllActions(index);
         }
+    }
+    private void setCurrentIndex(int index)
+    {
+        enemyStartingIndex = index;
+    }
+
+    public int getCurrentIndex()
+    {
+        return enemyStartingIndex;
     }
 
     private void drawHand() {
@@ -242,6 +253,14 @@ public class GameManager : MonoBehaviour
     }
 
     private void startPlayerTurn() {
+        isPlayerTurn = true;
+        foreach (GameObject enemy in getAllEnemies()) {
+            enemy.GetComponent<enemy>().setIntent();
+            enemy.GetComponent<enemy>().hasTakenTurn = false;
+        }
+        player.GetComponent<player>().setBlock(0);
+        waitingForNextTurn = false;
+        player.doAllActions();
         drawHand();
         playerMana = 0;
         playerMana += maxMana;

@@ -55,8 +55,9 @@ public class enemy : MonoBehaviour
     public Dictionary<Sprite, int> status = new Dictionary<Sprite, int>();
     public List<string> actions = new List<string>();
     public List<string> nextAction = new List<string>();
-    private int totalActions;
     private int countDownTimer;
+    private int currentIndex;
+    public bool hasTakenTurn;
     //need to add coroutines that go in order for each enemy, so it shows blocking damage and such
 
     private void Start()
@@ -67,13 +68,20 @@ public class enemy : MonoBehaviour
         setupBars();
         cam = Camera.main;
         addActions();
-        totalActions = actions.Count;
         //Debug.Log("The enemy: " + this.gameObject + " has: " + actions.Count + " actions.");
         posSetup(); //sets the original position of the gameObject enemy to the UI
         setStartValues();
         setupStatus();
         updateStatusBar();
         setIntent();
+    }
+
+    public bool checkForIntent() {
+        if (false) {
+            //return false;
+        } else {
+            return false;
+        }
     }
 
     private void setupStatus() {
@@ -92,14 +100,11 @@ public class enemy : MonoBehaviour
     public void setIntent() {
         int i;
         //Debug.Log(this.gameObject + "has amount of actions:" + stats.actionsPerTurn);
+        nextAction.Clear();
         for (i = 0; i < stats.actionsPerTurn; i++) {
-            if (totalActions >= stats.actionsPerTurn) {
-                nextAction.Add(actions[Random.Range(0, actions.Count - 1)]);
-            }
+            nextAction.Add(actions[Random.Range(0, actions.Count)]);
         }
-        for (i = 0; i < intentArea.transform.childCount; i++) {
-            intentArea.transform.GetChild(i).gameObject.SetActive(false);
-        }
+        clearIntent();
 
         showIntent(nextAction[0], 0);
         
@@ -109,6 +114,12 @@ public class enemy : MonoBehaviour
         // Debug.Log(nextAction.Count);
     }
 
+    public void clearIntent() {
+        for (int i = 0; i < intentArea.transform.childCount; i++)
+        {
+            intentArea.transform.GetChild(i).gameObject.SetActive(false);
+        }
+    }
     public void decrementAllStatuses() {
         if (status[poisonSprite] > 0) {
             status[poisonSprite]--;
@@ -173,6 +184,8 @@ public class enemy : MonoBehaviour
     }
 
     public void setStartValues() {
+        hasTakenTurn = false;
+        currentIndex = 0;
         damage = stats.damage;
         defense = stats.defense;
         buffAmount = stats.buffAmount;
@@ -205,8 +218,13 @@ public class enemy : MonoBehaviour
         }
     }
     
-    public void clearStatus(Sprite sprite) { 
-        
+    public void clearNSet() {
+        Debug.Log("clear and set called for: ");
+        Debug.Log(this.gameObject.name);
+        if (this.gameObject.name == "bomb") {
+            this.clearIntent();
+            this.setIntent();
+        }
     }
 
     public float getEnemyHealth() {
@@ -229,11 +247,16 @@ public class enemy : MonoBehaviour
     public void nextPhase() { //called after death animation is done
         Debug.Log("Next phase called");
         this.transform.SetAsLastSibling();
+        if (!gm.isPlayerTurn) {
+            gm.nextEnemyTurn(gm.getCurrentIndex() + 1);
+        }
         this.GetComponentInParent<enemyUI>().updateEnemy();
+        clearIntent();
         this.gameObject.transform.position = new Vector3(0, 0, -20);
     }
 
     public void setParentFalse() {
+        gm.nextEnemyTurn(gm.getCurrentIndex());
         this.transform.parent.gameObject.SetActive(false);
     }
 
@@ -310,11 +333,16 @@ public class enemy : MonoBehaviour
 
     public void doAllActions(int index)
     {
+        if (hasTakenTurn) {
+            return;
+        }
+        hasTakenTurn = true;
+        setCurrentIndex(index);
         directHealth(status[poisonSprite]);
         decrementAllStatuses();
         if (this.enemyHealth <= 0)
         {
-            gm.nextEnemyTurn(++index);
+            //gm.nextEnemyTurn(++index);
             return;
         }
         else
@@ -324,20 +352,27 @@ public class enemy : MonoBehaviour
     }
 
     public IEnumerator takeTurn(int index) {
-        Debug.Log("Take turn now is: " + this);
-        //Debug.Log(index);
+        //Debug.Log("Take turn now is: " + this);
+        //Debug.Log(this.gameObject + " has: " + nextAction.Count + " actions");
+        if (nextAction[0] != "countDown") {
+            clearIntent();
+        }
         foreach (string action in nextAction) {
             StartCoroutine(action);
         }
-        yield return new WaitForSeconds(0.9f);
         nextAction.Clear();
-        setIntent();
+        yield return new WaitForSeconds(0.9f);
+        //Debug.Log(this.gameObject + " has: " + nextAction.Count + " actions");
+        //setIntent();
         gm.nextEnemyTurn(++index);
         yield return null;
     }
+    private void setCurrentIndex(int index) {
+        currentIndex = index;
+    }
 
-    public void showBuffIcons() { 
-        
+    private int getCurrentIndex() {
+        return currentIndex;
     }
 
     public void UpdateEnemyHealth(float incomingDamage) //damage inc as a negative to lower defense/hp
@@ -383,6 +418,10 @@ public class enemy : MonoBehaviour
             hpBar.setHealth(enemyHealth, enemyMaxHealth);
             //Debug.Log("The enemy now has: " + enemyHealth + " hp left.");
         }
+    }
+
+    public void refreshIntent() {
+        
     }
     //I hate all the code beyond this point
     public void showIntent(string intent, int index) {
@@ -445,29 +484,35 @@ public class enemy : MonoBehaviour
     }
 
     IEnumerator attack() {
-        Debug.Log(this.gameObject + " is attacking for: " + damage);
+        //Debug.Log(this.gameObject + " is attacking for: " + damage);
         player.GetComponent<player>().updatePlayerHealth(damage);
         yield return null;
     }
     IEnumerator defend()
     {
-        Debug.Log(this.gameObject + " is defending!");
+        //Debug.Log(this.gameObject + " is defending!");
         addBlock(defense);
         yield return null;
     }
     IEnumerator countDown()
     {
-        Debug.Log(this.gameObject + " is counting down!");
+        //Debug.Log(this.gameObject + " is counting down!");
+        //Debug.Log("countdown before: " + countDownTimer);
         countDownTimer--;
+        //Debug.Log("countdown after: " + countDownTimer);
+        showIntent("countDown", 0);
         if (countDownTimer <= 0) {
-            //do explode animation
+            anim.SetTrigger("explode");
             player.gameObject.GetComponent<player>().updatePlayerHealth(damage);
+            //anim.SetTrigger("death");
             UpdateEnemyHealth(-999);
         }
         yield return null;
     }
     IEnumerator poisonPlayer(){
         Debug.Log(this.gameObject + " is poisoning player!");
+        player.status[poisonSprite] += stats.poisonDamage;
+        player.updateStatusBar();
         yield return null;
     }
     IEnumerator curse(){

@@ -6,8 +6,18 @@ using TMPro;
 
 public class player : MonoBehaviour
 {
-    public playerStats stats;
+    public Sprite poisonSprite;
+    public Sprite defenseSprite;
+    public Sprite armorBreak;
+    public Sprite sunderedSprite;
+    public Sprite buffSprite;
+    public Sprite retainSprite;
+    public Sprite countdownSprite;
+    public Sprite regenSprite;
+    public Sprite burnSprite;
 
+    public playerStats stats;
+    public Transform statusArea;
     private Animator anim;
     private Camera cam;
 
@@ -20,9 +30,11 @@ public class player : MonoBehaviour
     private int poison;
     private int block;
     private string playerName;
+    public Dictionary<Sprite, int> status = new Dictionary<Sprite, int>();
 
     private void Start()
     {
+        statusArea = transform.parent.transform.GetChild(0).transform.GetChild(2).transform;
         this.anim = GetComponent<Animator>();
         setupBars();
         cam = Camera.main;
@@ -32,16 +44,91 @@ public class player : MonoBehaviour
         playerHealth = playerMaxHealth;
         playerName = stats.name;
         updateBlock(); //displays original armor
+        setupStatus();
         hpBar.setHealth(playerHealth, playerMaxHealth); //sets the initial values for the enemy
+    }
+
+    private void setupStatus()
+    {
+        status.Add(poisonSprite, 0);
+        status.Add(defenseSprite, 0);
+        status.Add(armorBreak, 0);
+        status.Add(sunderedSprite, 0);
+        status.Add(buffSprite, 0);
+        status.Add(retainSprite, 0);
+        status.Add(countdownSprite, 0);
+        status.Add(regenSprite, 0);
+        status.Add(burnSprite, 0);
+        //Debug.Log(status);
+        updateStatusBar();
+    }
+    public void decrementAllStatuses()
+    {
+        if (status[poisonSprite] > 0)
+        {
+            status[poisonSprite]--;
+        }
+        if (status[armorBreak] > 0)
+        {
+            status[armorBreak]--;
+        }
+        if (status[defenseSprite] > 0)
+        {
+            status[defenseSprite]--;
+        }
+        if (status[sunderedSprite] > 0)
+        {
+            status[sunderedSprite]--;
+        }
+        if (status[buffSprite] > 0)
+        {
+            status[buffSprite]--;
+        }
+        if (status[retainSprite] > 0)
+        {
+            status[retainSprite]--;
+        }
+        if (status[countdownSprite] > 0)
+        {
+            status[countdownSprite]--;
+        }
+        if (status[regenSprite] > 0)
+        {
+            status[regenSprite]--;
+        }
+        if (status[burnSprite] > 0)
+        {
+            status[burnSprite]--;
+        }
+
+        updateStatusBar();
+    }
+    public void updateStatusBar()
+    {
+        //Debug.Log("poison for player is: " + status[poisonSprite]);
+        int i = 0;
+        foreach (Transform child in statusArea) {
+            child.gameObject.SetActive(false);
+        }
+        foreach (Sprite key in status.Keys)
+        {
+            //statusArea.transform.GetChild(i).gameObject.SetActive(false);
+            //Debug.Log("The value of: " + key + " is: " + status[key]);
+            if (status[key] != 0)
+            {
+                statusArea.transform.GetChild(i).gameObject.SetActive(true);
+                //Debug.Log(statusArea.transform.GetChild(i).gameObject.GetComponent<Image>().sprite);
+                statusArea.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = key;
+                statusArea.transform.GetChild(i).GetChild(0).GetComponent<TMP_Text>().text = status[key].ToString();
+                i++;
+            }
+        }
     }
 
     public void doAllActions()
     {
-        directHealth(this.poison);
-        if (this.poison > 0)
-        {
-            poison--;
-        }
+        directHealth(status[poisonSprite]);
+        decrementAllStatuses();
         setBlock(0);
     }
 
@@ -112,6 +199,9 @@ public class player : MonoBehaviour
     {
         playerHealth -= amount;
         hpBar.setHealth(playerHealth, playerMaxHealth);
+        if (playerHealth <= 0) {
+            Die();
+        }
     }
 
     public void posSetup()

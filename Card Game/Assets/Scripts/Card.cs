@@ -81,6 +81,12 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
             modifiedText = unmodifiedText.Replace("att", attack.ToString());
         }
 
+        if (unmodifiedText.Contains("attaoe"))
+        {
+            //Debug.Log("it contains att");
+            modifiedText = unmodifiedText.Replace("attaoe", card.aoeAttack.ToString());
+        }
+
         // Change value for defense on card
         if (unmodifiedText.Contains("def"))
         {
