@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     //reference for the clickable monster UI
     public Transform[] enemyCoveringUI;
-
+    public List<Transform> skipEnemiesList = new List<Transform>();
     public TMP_Text mana;
     public TMP_Text deckAmountText;
     public TMP_Text discardAmountText;
@@ -83,16 +83,6 @@ public class GameManager : MonoBehaviour
             if (slot.childCount > 0) {
                 enemyCount++;
             }
-        }
-    }
-
-    public void addEnemy() {
-        if (enemyCoveringUI.Length >= 5)
-        {
-            return;
-        }
-        else { 
-            
         }
     }
 
@@ -189,6 +179,26 @@ public class GameManager : MonoBehaviour
         return enemies;
     }
 
+    public Transform getAvailableEnemySlots() {
+        foreach (Transform slot in enemyCoveringUI) {
+            if (slot.childCount == 0 || slot.GetChild(0) == null)
+            {
+                return slot;
+            }
+            if (slot.GetChild(0) != null && !slot.GetChild(0).gameObject.activeInHierarchy)
+            {
+                Destroy(slot.GetChild(0));
+                return slot;
+            }
+        }
+        Debug.Log("No available slots");
+        return null;
+    }
+
+    public void skipEnemyTurn(Transform enemyToSkip) {
+        skipEnemiesList.Add(enemyToSkip);
+    }
+
     //clears the hand, putting all into discard list and setting active
     public void endTurn() {
         isPlayerTurn = false;
@@ -217,6 +227,20 @@ public class GameManager : MonoBehaviour
             return;
         }
         int temp = 0;
+        if (skipEnemiesList.Count != 0)
+        {
+            Debug.Log("Skipping: " + skipEnemiesList[0]);
+            foreach (Transform slot in skipEnemiesList)
+            {
+                if (slot.gameObject == enemyCoveringUI[index].GetChild(0).gameObject)
+                {
+                    skipEnemiesList.Remove(slot);
+                    index++;
+                    setCurrentIndex(index);
+                    nextEnemyTurn(index);
+                }
+            }
+        }  
         if (temp == totalEnemiesAtTurnStart) {
             enemyStartingIndex = 0;
             startPlayerTurn();
@@ -253,6 +277,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void startPlayerTurn() {
+        skipEnemiesList.Clear();
         isPlayerTurn = true;
         foreach (GameObject enemy in getAllEnemies()) {
             enemy.GetComponent<enemy>().setIntent();

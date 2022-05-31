@@ -27,6 +27,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bat
       objectReference: {fileID: 0}
+    - target: {fileID: 7144220912693874677, guid: 553405125753c67449b2a0ac481bf6d9, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8136988021019245970, guid: 553405125753c67449b2a0ac481bf6d9, type: 3}
       propertyPath: m_Controller
       value: 

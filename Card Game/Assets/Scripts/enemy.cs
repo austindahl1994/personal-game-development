@@ -58,6 +58,8 @@ public class enemy : MonoBehaviour
     private int countDownTimer;
     private int currentIndex;
     public bool hasTakenTurn;
+    public bool intentSet;
+
     //need to add coroutines that go in order for each enemy, so it shows blocking damage and such
 
     private void Start()
@@ -74,14 +76,14 @@ public class enemy : MonoBehaviour
         setupStatus();
         updateStatusBar();
         setIntent();
+        StartCoroutine(temp());
     }
 
-    public bool checkForIntent() {
-        if (false) {
-            //return false;
-        } else {
-            return false;
-        }
+    IEnumerator temp()
+    {
+        yield return new WaitForSeconds(0.01f);
+        this.GetComponentInParent<enemyUI>().updateEnemy();
+        yield return null;
     }
 
     private void setupStatus() {
@@ -98,20 +100,38 @@ public class enemy : MonoBehaviour
     }
 
     public void setIntent() {
-        int i;
-        //Debug.Log(this.gameObject + "has amount of actions:" + stats.actionsPerTurn);
-        nextAction.Clear();
-        for (i = 0; i < stats.actionsPerTurn; i++) {
-            nextAction.Add(actions[Random.Range(0, actions.Count)]);
+        //Debug.Log("Set intent was called for: " + this.gameObject);
+        //if out of index check and make sure the enemy has actions/can do actions
+        if (this.intentSet || this.gameObject.tag == "newSummon")
+        {
+            return;
         }
-        clearIntent();
+        else {
+            //Debug.Log("Set intent called for: " + this.gameObject + "intentSet is:" + intentSet);
+            intentSet = true;
+            //Debug.Log("intentSet is now:" + intentSet);
+            int i;
+            //Debug.Log(this.gameObject + "has amount of actions:" + stats.actionsPerTurn);
+            nextAction.Clear();
+            for (i = 0; i < stats.actionsPerTurn; i++)
+            {
+                nextAction.Add(actions[Random.Range(0, actions.Count)]);
+            }
+            clearIntent();
 
-        showIntent(nextAction[0], 0);
+            showIntent(nextAction[0], 0);
+        }
         
         //modify some value attached to object based on each action in nextAction
 
         // Debug.Log(this.gameObject);
         // Debug.Log(nextAction.Count);
+    }
+
+    public void refreshIntent() {
+        if (this.gameObject.tag != "newSummon") {
+            showIntent(nextAction[0], 0);
+        }
     }
 
     public void clearIntent() {
@@ -120,6 +140,7 @@ public class enemy : MonoBehaviour
             intentArea.transform.GetChild(i).gameObject.SetActive(false);
         }
     }
+
     public void decrementAllStatuses() {
         if (status[poisonSprite] > 0) {
             status[poisonSprite]--;
@@ -127,26 +148,14 @@ public class enemy : MonoBehaviour
         if (status[armorBreak] > 0) {
             status[armorBreak]--;
         }
-        if (status[defenseSprite] > 0) {
-            status[defenseSprite]--;
-        }
         if (status[sunderedSprite] > 0) {
             status[sunderedSprite]--;
-        }
-        if (status[buffSprite] > 0){
-            status[buffSprite]--;
-        }
-        if (status[retainSprite] > 0){
-            status[retainSprite]--;
         }
         if (status[countdownSprite] > 0){
             status[countdownSprite]--;
         }
         if (status[regenSprite] > 0){
             status[regenSprite]--;
-        }
-        if (status[burnSprite] > 0){
-            status[burnSprite]--;
         }
 
         updateStatusBar();
@@ -184,6 +193,7 @@ public class enemy : MonoBehaviour
     }
 
     public void setStartValues() {
+        intentSet = false;
         hasTakenTurn = false;
         currentIndex = 0;
         damage = stats.damage;
@@ -218,15 +228,6 @@ public class enemy : MonoBehaviour
         }
     }
     
-    public void clearNSet() {
-        Debug.Log("clear and set called for: ");
-        Debug.Log(this.gameObject.name);
-        if (this.gameObject.name == "bomb") {
-            this.clearIntent();
-            this.setIntent();
-        }
-    }
-
     public float getEnemyHealth() {
         return this.enemyHealth;
     }
@@ -239,6 +240,7 @@ public class enemy : MonoBehaviour
 
     private void Die()
     {
+        gm.nextEnemyTurn(gm.getCurrentIndex()+1);
         gameObject.tag = "Untagged";
         //Debug.Log("Die was called");
         this.anim.SetTrigger("death");
@@ -251,13 +253,14 @@ public class enemy : MonoBehaviour
             gm.nextEnemyTurn(gm.getCurrentIndex() + 1);
         }
         this.GetComponentInParent<enemyUI>().updateEnemy();
-        clearIntent();
+        this.GetComponentInParent<enemyUI>().newEnemyReset();
         this.gameObject.transform.position = new Vector3(0, 0, -20);
     }
 
     public void setParentFalse() {
-        gm.nextEnemyTurn(gm.getCurrentIndex());
+        //gm.nextEnemyTurn(gm.getCurrentIndex());
         this.transform.parent.gameObject.SetActive(false);
+        Destroy(this.transform.parent.gameObject);
     }
 
     public void updateBlock() {
@@ -316,19 +319,19 @@ public class enemy : MonoBehaviour
         blockBar.SetActive(false); //unless enemy starts with armor, will not show
     }
 
-    //if defense > 0, defenseBar.setActice = true;
-
     public void posSetup()
     {
-        //Debug.Log("The slimes current position is: " + this.gameObject.transform.position);
-        GameObject parent = this.transform.parent.gameObject;
-        //Debug.Log("The parents current position is: " + parent.transform.position);
-        //Debug.Log("The current parent of: " + this.gameObject + " is: " + parent.gameObject);
-        //Debug.Log("This current position: " + this.gameObject.transform.position);
-        Vector3 temp = new Vector3();
-        temp = cam.ScreenToWorldPoint(parent.gameObject.transform.position);
-        this.transform.position = new Vector3(temp.x, temp.y, 0);
-        //Debug.Log("This current position: " + this.gameObject.transform.position);
+        if (this.gameObject.transform.parent != null) {
+            //Debug.Log("Parent is: " + this.gameObject.transform.parent);
+            //Debug.Log("The slimes current position is: " + this.gameObject.transform.position);
+            //Debug.Log("The parents current position is: " + this.transform.parent.gameObject.transform.position);
+            //Debug.Log("The current parent of: " + this.gameObject + " is: " + this.transform.parent.gameObject);
+            //Debug.Log("This current position: " + this.gameObject.transform.position);
+            Vector3 temp = new Vector3();
+            temp = Camera.main.ScreenToWorldPoint(this.transform.parent.gameObject.transform.position);
+            this.transform.position = new Vector3(temp.x, temp.y, 0);
+            //Debug.Log("This current position: " + this.gameObject.transform.position);
+        }
     }
 
     public void doAllActions(int index)
@@ -352,6 +355,14 @@ public class enemy : MonoBehaviour
     }
 
     public IEnumerator takeTurn(int index) {
+        if (this.gameObject.transform.parent.tag == "newSummon") {
+            this.gameObject.transform.parent.tag = "summoned";
+            nextAction.Clear();
+            intentSet = false;
+            yield return new WaitForSeconds(0.4f);
+            gm.nextEnemyTurn(++index);
+            yield return null;
+        }
         //Debug.Log("Take turn now is: " + this);
         //Debug.Log(this.gameObject + " has: " + nextAction.Count + " actions");
         if (nextAction[0] != "countDown") {
@@ -364,6 +375,7 @@ public class enemy : MonoBehaviour
         yield return new WaitForSeconds(0.9f);
         //Debug.Log(this.gameObject + " has: " + nextAction.Count + " actions");
         //setIntent();
+        intentSet = false;
         gm.nextEnemyTurn(++index);
         yield return null;
     }
@@ -420,14 +432,11 @@ public class enemy : MonoBehaviour
         }
     }
 
-    public void refreshIntent() {
-        
-    }
     //I hate all the code beyond this point
     public void showIntent(string intent, int index) {
         int num = 0;
         //Debug.Log("Index and string sent: " + index + " " + intent);
-        if (intent == "attack") { spriteImage = attackIntentSprite;  num = damage; }
+        if (intent == "attack") { spriteImage = attackIntentSprite;  num = damage + status[buffSprite]; }
         if (intent == "defend") { spriteImage = defendIntentSprite; num = defense; }
         if (intent == "countDown") { spriteImage = countdownSprite; num = countDownTimer; }
         if (intent == "poisonPlayer") { spriteImage = poisonSprite; num = stats.poisonDamage; }
@@ -485,7 +494,7 @@ public class enemy : MonoBehaviour
 
     IEnumerator attack() {
         //Debug.Log(this.gameObject + " is attacking for: " + damage);
-        player.GetComponent<player>().updatePlayerHealth(damage);
+        player.GetComponent<player>().updatePlayerHealth(damage + status[buffSprite]);
         yield return null;
     }
     IEnumerator defend()
@@ -518,37 +527,42 @@ public class enemy : MonoBehaviour
     IEnumerator curse(){
         Debug.Log(this.gameObject + " is cursing player!");
         yield return null;
-    }
+    } //needs work
     IEnumerator summon(){
         Debug.Log(this.gameObject + " is summoning minion!");
+        if (gm.getAvailableEnemySlots() != null) {
+            GameObject newEnemy = Instantiate(stats.summon, gm.getAvailableEnemySlots(), true);
+            gm.skipEnemyTurn(newEnemy.transform);
+            Debug.Log("Enemy to skip is: " + newEnemy);
+        }
         yield return null;
-    }
+    } //needs work
     IEnumerator buffSelf(){
         Debug.Log(this.gameObject + " is buffing self!");
         yield return null;
-    }
+    } //needs work
     IEnumerator buffOthers(){
         Debug.Log(this.gameObject + " is buffing others!");
         yield return null;
-    }
+    } //needs work
     IEnumerator debuff(){
         Debug.Log(this.gameObject + " is debuffing player!");
         yield return null;
-    }
+    } //needs work
     IEnumerator healself(){
         Debug.Log(this.gameObject + " is healing self!");
         yield return null;
-    }
+    } //needs work
     IEnumerator healOtherEnemies(){
         Debug.Log(this.gameObject + " is healing others!");
         yield return null;
-    }
+    } //needs work
     IEnumerator corrosion(){
         Debug.Log(this.gameObject + " is corroding armor!");
         yield return null;
-    }
+    } //needs work
     IEnumerator canGiveCard(){
         Debug.Log(this.gameObject + " is giving card!");
         yield return null;
-    }
+    } //needs work
 }

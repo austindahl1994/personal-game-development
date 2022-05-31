@@ -22,7 +22,7 @@ public class enemyUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
         play = FindObjectOfType<cardPlayer>();
         this.transform.position = transform.parent.transform.position;
         //set the enemy as the listed element under the enemyUI portion, listed 2 at the moment
-        updateEnemy();
+        //updateEnemy();
         image = GetComponent<Image>();
         hideImage = image.color;
         showImage = image.color;
@@ -33,17 +33,26 @@ public class enemyUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
     }
 
     public void updateEnemy() {
-        //need to work on to fix, it updates all statuses for all enemies
-        enemy = this.gameObject.transform.GetChild(2).gameObject; //enemy gameobject
-        //Debug.Log("The current enemy is: " + enemy);
-        enemy.gameObject.SetActive(true);
-        enemy.gameObject.GetComponent<enemy>().posSetup();
-        enemy.gameObject.GetComponent<enemy>().updateBlock();
-        enemy.gameObject.transform.SetSiblingIndex(2);
-        enemy.gameObject.GetComponent<enemy>().UpdateEnemyHealth(0);
-        enemy.gameObject.GetComponent<enemy>().updateStatusBar();
-        //this.gameObject.transform.GetChild(2).gameObject.GetComponent<enemy>().clearNSet();
-        //Debug.Log("Current enemy is: " + enemy);
+        if (GetComponentInChildren<enemy>().gameObject != null) {
+            //Debug.Log(this.gameObject.transform.GetChild(2).gameObject + " is not null");
+            //need to work on to fix, it updates all statuses for all enemies
+            GetComponentInChildren<enemy>().posSetup();
+            GetComponentInChildren<enemy>().updateBlock();
+            GetComponentInChildren<enemy>().UpdateEnemyHealth(0);
+            GetComponentInChildren<enemy>().updateStatusBar();
+            GetComponentInChildren<enemy>().gameObject.transform.SetSiblingIndex(2);
+            //enemy = this.gameObject.transform.GetChild(2).gameObject; //enemy gameobject
+            //Debug.Log("The current enemy is: " + enemy);
+            //enemy.gameObject.GetComponent<enemy>().posSetup();
+            //enemy.gameObject.GetComponent<enemy>().updateBlock();
+            //enemy.gameObject.transform.SetSiblingIndex(2);
+            //enemy.gameObject.GetComponent<enemy>().UpdateEnemyHealth(0);
+            //enemy.gameObject.GetComponent<enemy>().updateStatusBar();
+        }
+    }
+
+    public void newEnemyReset() {
+        enemy.GetComponent<enemy>().refreshIntent();
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
