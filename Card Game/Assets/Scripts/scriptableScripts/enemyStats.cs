@@ -16,8 +16,8 @@ public class enemyStats : ScriptableObject
     public int regenSelfAmount;
     public int healSelfAmount;
     public int healOthersAmount;
-    public int corrosionAmount;
     public int buffAmount;
+    public bool corrosion;
     public bool buffSelfAction;
     public bool buffOthersAction;
     public bool hasDeathEffect = false;
@@ -27,5 +27,5 @@ public class enemyStats : ScriptableObject
     public bool weakenAction;
     public bool sunderAction;
     public GameObject summon;
-    public Card canGiveCard;
+    public GameObject canGiveCard;
 }

@@ -51,7 +51,12 @@ public class enemyUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
         }
     }
 
+    public GameObject getEnemy() {
+        return this.gameObject.transform.GetChild(2).gameObject;
+    }
+
     public void newEnemyReset() {
+        enemy = getEnemy();
         enemy.GetComponent<enemy>().refreshIntent();
     }
 
@@ -74,12 +79,12 @@ public class enemyUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
         if (card1 != null) {
             card1.transform.localScale = new Vector3(1, 1, 1);
             //Debug.Log("Sending both: " + card1 + " " + enemy + "from ui script");
-            play.playCard(card1, enemy);
+            play.playCard(card1, getEnemy());
         } else {
             //show a UI screen with montster information?
             //Debug.Log(card1);
             Debug.Log("Some kinda monster info here");
-            Debug.Log("enemy selected: " + enemy);
+            Debug.Log("enemy selected: " + getEnemy());
         }
         /*
         if (card != null) {

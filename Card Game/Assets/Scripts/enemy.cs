@@ -194,7 +194,7 @@ public class enemy : MonoBehaviour
 
     public void setStartValues() {
         intentSet = false;
-        hasTakenTurn = false;
+        hasTakenTurn = true;
         currentIndex = 0;
         damage = stats.damage;
         defense = stats.defense;
@@ -337,6 +337,7 @@ public class enemy : MonoBehaviour
     public void doAllActions(int index)
     {
         if (hasTakenTurn) {
+            gm.nextEnemyTurn(gm.getCurrentIndex()+1);
             return;
         }
         hasTakenTurn = true;
@@ -487,7 +488,7 @@ public class enemy : MonoBehaviour
         if (stats.sunderAction){actions.Add("sunder");}
         if (stats.healSelfAmount > 0){actions.Add("healSelf");}
         if (stats.healOthersAmount > 0){actions.Add("healOtherEnemies");}
-        if (stats.corrosionAmount > 0){actions.Add("corrosion");}
+        if (stats.corrosion){actions.Add("corrosion");}
         if (stats.canGiveCard != null){actions.Add("canGiveCard");}
         if (stats.burnDamage > 0) {actions.Add("burn");}
     }
@@ -519,7 +520,7 @@ public class enemy : MonoBehaviour
         yield return null;
     }
     IEnumerator poisonPlayer(){
-        Debug.Log(this.gameObject + " is poisoning player!");
+        //Debug.Log(this.gameObject + " is poisoning player!");
         player.status[poisonSprite] += stats.poisonDamage;
         player.updateStatusBar();
         yield return null;
@@ -529,14 +530,13 @@ public class enemy : MonoBehaviour
         yield return null;
     } //needs work
     IEnumerator summon(){
-        Debug.Log(this.gameObject + " is summoning minion!");
+        //Debug.Log(this.gameObject + " is summoning minion!");
         if (gm.getAvailableEnemySlots() != null) {
             GameObject newEnemy = Instantiate(stats.summon, gm.getAvailableEnemySlots(), true);
-            gm.skipEnemyTurn(newEnemy.transform);
-            Debug.Log("Enemy to skip is: " + newEnemy);
+            newEnemy.transform.localScale = new Vector3(1, 1, 1);
         }
         yield return null;
-    } //needs work
+    } 
     IEnumerator buffSelf(){
         Debug.Log(this.gameObject + " is buffing self!");
         yield return null;
@@ -559,10 +559,14 @@ public class enemy : MonoBehaviour
     } //needs work
     IEnumerator corrosion(){
         Debug.Log(this.gameObject + " is corroding armor!");
+        player.GetComponent<player>().setBlock(0);
         yield return null;
-    } //needs work
+    } 
     IEnumerator canGiveCard(){
-        Debug.Log(this.gameObject + " is giving card!");
+        //Debug.Log(this.gameObject + " is giving card!");
+        GameObject newCard = Instantiate(stats.canGiveCard, gm.cardHolderArea.transform, true);
+        gm.addToHand(newCard);
+        gm.updateHandPosition();
         yield return null;
-    } //needs work
+    } 
 }

@@ -31,6 +31,10 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     public int bleed;
     public int modAdd;
     public int modMultiply;
+    public bool fragile;
+    public bool vanish;
+    public bool special;
+    public string specialName;
 
     public bool isSelectedCard;
     public bool firstTime = true;
@@ -50,7 +54,12 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         defense = card.defense;
         poison = card.poison;
         bleed = card.bleed;
+        fragile = card.fragile;
+        vanish = card.vanish;
+        special = card.special;
+        specialName = card.specialName;
         description.text = updateText(card.description);
+
         //for some reason exitHover was not starting as true, so first time a card was hovered over it would not act properly?
         gm = FindObjectOfType<GameManager>();
     }

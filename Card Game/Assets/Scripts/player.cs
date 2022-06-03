@@ -185,7 +185,7 @@ public class player : MonoBehaviour
     public void addBlock(int block)
     {
         this.block += block;
-        Debug.Log(this.name + " has: " + this.block);
+        //Debug.Log(this.name + " has: " + this.block);
         updateBlock();
     }
 

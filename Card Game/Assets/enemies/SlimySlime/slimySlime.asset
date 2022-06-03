@@ -13,26 +13,25 @@ MonoBehaviour:
   m_Name: slimySlime
   m_EditorClassIdentifier: 
   name: Slimy Slime
+  actionsPerTurn: 1
   startingBlock: 0
   damage: 3
   defense: 1
   poisonDamage: 0
   health: 33
-  hasDeathEffect: 0
-  retainsBlock: 0
-  attackAction: 1
-  defendAction: 1
-  hybrid: 1
-  countdownAction: 0
-  poisonAction: 0
-  curseAction: 0
-  summonAction: 0
+  burnDamage: 0
+  regenSelfAmount: 0
+  healSelfAmount: 0
+  healOthersAmount: 0
+  buffAmount: 0
+  corrosion: 1
   buffSelfAction: 0
   buffOthersAction: 0
-  debuffAction: 0
-  healSelf: 0
-  healOthers: 0
-  healAmount: 0
-  corrosion: 0
+  hasDeathEffect: 0
+  retainsBlock: 0
+  countdownAction: 0
+  curseAction: 0
+  weakenAction: 0
+  sunderAction: 0
+  summon: {fileID: 0}
   canGiveCard: {fileID: 0}
-  actionsPerTurn: 1

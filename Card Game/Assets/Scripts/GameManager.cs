@@ -138,6 +138,10 @@ public class GameManager : MonoBehaviour
         return hand;
     }
 
+    public void addToHand(GameObject card) {
+        hand.Add(card.GetComponent<Card>());
+    }
+
     //after card effects are done resets the card and moves to discard pile
     public void moveToDiscardPile(Card cardPlayed)
     {
@@ -151,6 +155,14 @@ public class GameManager : MonoBehaviour
         //Debug.Log("hand position updated");
         cardPlayed.gameObject.SetActive(false);
         //Debug.Log("game object no longer true");
+    }
+
+    public void destroyFragileCard(Card cardPlayed) {
+        hand.Remove(cardPlayed);
+        cardPlayed.isInHand = false;
+        cardPlayed.gameObject.SetActive(false);
+        updateHandPosition();
+        Destroy(cardPlayed);
     }
 
     public void rewardScreen() { 
@@ -181,22 +193,20 @@ public class GameManager : MonoBehaviour
 
     public Transform getAvailableEnemySlots() {
         foreach (Transform slot in enemyCoveringUI) {
+            if (slot.gameObject.name == "enemyBossSlot") {
+                continue;
+            }
             if (slot.childCount == 0 || slot.GetChild(0) == null)
             {
                 return slot;
             }
-            if (slot.GetChild(0) != null && !slot.GetChild(0).gameObject.activeInHierarchy)
+            if (slot.gameObject.transform.GetChild(0) != null && !slot.GetChild(0).gameObject.activeInHierarchy)
             {
-                Destroy(slot.GetChild(0));
                 return slot;
             }
         }
-        Debug.Log("No available slots");
+        //Debug.Log("No available slots");
         return null;
-    }
-
-    public void skipEnemyTurn(Transform enemyToSkip) {
-        skipEnemiesList.Add(enemyToSkip);
     }
 
     //clears the hand, putting all into discard list and setting active
@@ -217,6 +227,7 @@ public class GameManager : MonoBehaviour
         foreach (GameObject enemy in getAllEnemies())
         {
             enemy.GetComponent<enemy>().setBlock(0);
+            enemy.GetComponent<enemy>().hasTakenTurn = false;
             totalEnemiesAtTurnStart++;
         }
         nextEnemyTurn(enemyStartingIndex);
@@ -226,25 +237,7 @@ public class GameManager : MonoBehaviour
         if (isPlayerTurn) {
             return;
         }
-        int temp = 0;
-        if (skipEnemiesList.Count != 0)
-        {
-            Debug.Log("Skipping: " + skipEnemiesList[0]);
-            foreach (Transform slot in skipEnemiesList)
-            {
-                if (slot.gameObject == enemyCoveringUI[index].GetChild(0).gameObject)
-                {
-                    skipEnemiesList.Remove(slot);
-                    index++;
-                    setCurrentIndex(index);
-                    nextEnemyTurn(index);
-                }
-            }
-        }  
-        if (temp == totalEnemiesAtTurnStart) {
-            enemyStartingIndex = 0;
-            startPlayerTurn();
-        } else if (index >= enemyCoveringUI.Length) {
+        if (index >= enemyCoveringUI.Length) {
             enemyStartingIndex = 0;
             startPlayerTurn();
         } else if (enemyCoveringUI[index].childCount == 0 ||

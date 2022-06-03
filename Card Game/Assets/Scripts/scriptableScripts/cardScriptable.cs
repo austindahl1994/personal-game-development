@@ -21,6 +21,8 @@ public class cardScriptable : ScriptableObject
     public int burn; //Does no damage but ignite deals the amount of damage, +initial
     public bool ignite; //for burn
     public bool special;
+    public bool vanish;
+    public bool fragile;
     public string specialName;
     public bool hasStartOfTurnEffect;
     public string startOfTurnEffectName;

@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Slime
   actionsPerTurn: 1
-  startingBlock: 0
+  startingBlock: 3
   damage: 0
   defense: 0
   poisonDamage: 0
-  health: 10
+  health: 7
   burnDamage: 0
   regenSelfAmount: 0
   healSelfAmount: 0
   healOthersAmount: 0
-  corrosionAmount: 0
   buffAmount: 0
+  corrosion: 0
   buffSelfAction: 0
   buffOthersAction: 0
   hasDeathEffect: 0
@@ -34,4 +34,4 @@ MonoBehaviour:
   weakenAction: 0
   sunderAction: 0
   summon: {fileID: 7726954680724883969, guid: b49a1a6d4f6019447b0564768931e7c6, type: 3}
-  canGiveCard: {fileID: 0}
+  canGiveCard: {fileID: 5219563744403011755, guid: bc743924f32a486448423dd1c49df372, type: 3}

@@ -25,22 +25,37 @@ public class cardPlayer : MonoBehaviour
         }
         dealAOE(cardPlayed.aoeAttack);
         gm.playerMana -= cardPlayed.manaCost;
-        gm.moveToDiscardPile(cardPlayed);
+        if (cardPlayed.fragile)
+        {
+            //do destroy animation, possibly go to 
+            //Debug.Log("Destroying card: " + cardPlayed);
+            gm.destroyFragileCard(cardPlayed);
+        }
+        else
+        {
+            gm.moveToDiscardPile(cardPlayed);
+        }
     }
 
     public void playCard(Card cardPlayed, GameObject target)
     {
-        if (cardPlayed.defense > 0)
-        {
-            player.GetComponent<player>().addBlock(cardPlayed.defense);
-        }
+        //Debug.Log("Target is: " + target);
+        player.GetComponent<player>().addBlock(cardPlayed.defense);
         //Debug.Log("Card received was: " + cardPlayed);
         //Debug.Log("Card has attack: " + cardPlayed.attack);
         target.gameObject.GetComponent<enemy>().addPoison(cardPlayed.poison);
         target.gameObject.GetComponent<enemy>().UpdateEnemyHealth(cardPlayed.attack);
         dealAOE(cardPlayed.aoeAttack);
         gm.playerMana -= cardPlayed.manaCost;
-        gm.moveToDiscardPile(cardPlayed);
+        if (cardPlayed.fragile)
+        {
+            //do destroy animation, possibly go to 
+            //Debug.Log("Destroying card: " + cardPlayed);
+            gm.destroyFragileCard(cardPlayed);
+        }
+        else {
+            gm.moveToDiscardPile(cardPlayed);
+        }
     }
     public void dealAOE(float damage)
     {
