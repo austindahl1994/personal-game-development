@@ -34,20 +34,11 @@ public class enemyUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
 
     public void updateEnemy() {
         if (GetComponentInChildren<enemy>().gameObject != null) {
-            //Debug.Log(this.gameObject.transform.GetChild(2).gameObject + " is not null");
-            //need to work on to fix, it updates all statuses for all enemies
             GetComponentInChildren<enemy>().posSetup();
             GetComponentInChildren<enemy>().updateBlock();
             GetComponentInChildren<enemy>().UpdateEnemyHealth(0);
             GetComponentInChildren<enemy>().updateStatusBar();
             GetComponentInChildren<enemy>().gameObject.transform.SetSiblingIndex(2);
-            //enemy = this.gameObject.transform.GetChild(2).gameObject; //enemy gameobject
-            //Debug.Log("The current enemy is: " + enemy);
-            //enemy.gameObject.GetComponent<enemy>().posSetup();
-            //enemy.gameObject.GetComponent<enemy>().updateBlock();
-            //enemy.gameObject.transform.SetSiblingIndex(2);
-            //enemy.gameObject.GetComponent<enemy>().UpdateEnemyHealth(0);
-            //enemy.gameObject.GetComponent<enemy>().updateStatusBar();
         }
     }
 

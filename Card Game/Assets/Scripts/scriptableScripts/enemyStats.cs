@@ -17,6 +17,8 @@ public class enemyStats : ScriptableObject
     public int healSelfAmount;
     public int healOthersAmount;
     public int buffAmount;
+    public int sunderAmount;
+    public int weakenAmount;
     public bool corrosion;
     public bool buffSelfAction;
     public bool buffOthersAction;

@@ -120,6 +120,7 @@ MonoBehaviour:
   defenseSprite: {fileID: 21300000, guid: 5a18e7d6fdc8dfa4591ee85e63cf6e6f, type: 3}
   armorBreak: {fileID: 21300000, guid: ac4ee2daf7587214fbc9d064819c0a3d, type: 3}
   sunderedSprite: {fileID: 21300000, guid: e3177b0f3b161c44bb0071d7a0fca5c2, type: 3}
+  weakenSprite: {fileID: 21300000, guid: 7eb75b74f4db6fc478090720d59779c9, type: 3}
   buffSprite: {fileID: 21300000, guid: db592f8b3391a9e4eac605ee64e5b48b, type: 3}
   retainSprite: {fileID: 21300000, guid: 117fd1d2ce64b0b48a8125cb10b9bdd5, type: 3}
   countdownSprite: {fileID: 21300000, guid: 88debdd7c8e122c44a019efd489320ea, type: 3}
@@ -133,6 +134,7 @@ MonoBehaviour:
   healSelfIntentSprite: {fileID: 21300000, guid: 94a1b2198f677b74fa7845207d6268b9, type: 3}
   healOthersIntentSprite: {fileID: 21300000, guid: f7e8ef0ef62356c4382ce6cdfa1445c0, type: 3}
   buffOthersIntentSprite: {fileID: 21300000, guid: c53a6d4935e292c41acaf7363c78f7a6, type: 3}
+  buffSelfSprite: {fileID: 21300000, guid: db592f8b3391a9e4eac605ee64e5b48b, type: 3}
   giveCardIntentSprite: {fileID: 21300000, guid: 7dc2e29007c8c154f9d70a32608a53bc, type: 3}
   curseIntentSprite: {fileID: 21300000, guid: 76eec66c8ac45244595dfe53aaa35af6, type: 3}
   statusArea: {fileID: 0}
@@ -140,3 +142,4 @@ MonoBehaviour:
   actions: []
   nextAction: []
   hasTakenTurn: 0
+  intentSet: 0

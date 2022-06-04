@@ -5,8 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 public class GameManager : MonoBehaviour
 {
-    private enemy enemy;
     private player player;
+    public cardPlayer play;
     //list of all the cards
     public List<Card> allAvailableCards = new List<Card>(); //where cards are added from
     public List<Card> allHiddenCards = new List<Card>(); //this in another list at beginning of run
@@ -46,11 +46,11 @@ public class GameManager : MonoBehaviour
     public int modManaMultiply;
     private bool waitingForNextTurn;
     public bool isPlayerTurn;
-    private int totalEnemiesAtTurnStart;
     private void Start()
     {
         enemyStartingIndex = 0;
         player = FindObjectOfType<player>();
+        play = FindObjectOfType<cardPlayer>();
         modManaAdd = 0;
         modManaMultiply = 1;
         isInUI = false; //allows cards to be shown in hand
@@ -222,13 +222,11 @@ public class GameManager : MonoBehaviour
             discard.Add(card);
         }
         hand.Clear();
-        totalEnemiesAtTurnStart = 0;
         //start enemy turn??
         foreach (GameObject enemy in getAllEnemies())
         {
             enemy.GetComponent<enemy>().setBlock(0);
             enemy.GetComponent<enemy>().hasTakenTurn = false;
-            totalEnemiesAtTurnStart++;
         }
         nextEnemyTurn(enemyStartingIndex);
     }

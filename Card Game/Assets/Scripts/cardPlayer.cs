@@ -69,5 +69,14 @@ public class cardPlayer : MonoBehaviour
         allEnemies.Clear();
     }
 
+    public void playEndOfTurnEffect(Card cardPlayed) {
+        StartCoroutine(cardPlayed.startOfTurnEffectName);
+    }
+    public void playStartOfTurnEffect(Card cardPlayed) {
+        StartCoroutine(cardPlayed.endOfTurnEffectName);
+    }
 
+    IEnumerator someName() {
+        yield return null;
+    }
 }

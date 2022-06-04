@@ -16,6 +16,7 @@ public class enemy : MonoBehaviour
     public Sprite defenseSprite;
     public Sprite armorBreak;
     public Sprite sunderedSprite;
+    public Sprite weakenSprite;
     public Sprite buffSprite;
     public Sprite retainSprite;
     public Sprite countdownSprite;
@@ -30,6 +31,7 @@ public class enemy : MonoBehaviour
     public Sprite healSelfIntentSprite;
     public Sprite healOthersIntentSprite;
     public Sprite buffOthersIntentSprite;
+    public Sprite buffSelfSprite;
     public Sprite giveCardIntentSprite;
     public Sprite curseIntentSprite;
 
@@ -76,10 +78,10 @@ public class enemy : MonoBehaviour
         setupStatus();
         updateStatusBar();
         setIntent();
-        StartCoroutine(temp());
+        StartCoroutine(setupNewEnemy());
     }
 
-    IEnumerator temp()
+    IEnumerator setupNewEnemy()
     {
         yield return new WaitForSeconds(0.01f);
         this.GetComponentInParent<enemyUI>().updateEnemy();
@@ -91,6 +93,7 @@ public class enemy : MonoBehaviour
         status.Add(defenseSprite, 0);
         status.Add(armorBreak, 0);
         status.Add(sunderedSprite, 0);
+        status.Add(weakenSprite, 0);
         status.Add(buffSprite, 0);
         status.Add(retainSprite, 0);
         status.Add(countdownSprite, 0);
@@ -444,7 +447,7 @@ public class enemy : MonoBehaviour
         if (intent == "curse") { spriteImage = curseIntentSprite; num = 0; }
         if (intent == "summon") { spriteImage = summonIntentSprite; num = 0; }
         if (intent == "buffSelf") { spriteImage = buffSprite; num = buffAmount; }
-        if (intent == "buffOthers") { spriteImage = buffOthersIntentSprite; num = 0; }
+        if (intent == "buffOthers") { spriteImage = buffOthersIntentSprite; num = buffAmount; }
         if (intent == "healSelf") { spriteImage = healSelfIntentSprite; num = stats.healSelfAmount; }
         if (intent == "regenSelf") { spriteImage = regenSprite; num = stats.regenSelfAmount; }
         if (intent == "healOthers") { spriteImage = healOthersIntentSprite; num = stats.healOthersAmount; }
@@ -528,7 +531,7 @@ public class enemy : MonoBehaviour
     IEnumerator curse(){
         Debug.Log(this.gameObject + " is cursing player!");
         yield return null;
-    } //needs work
+    } //needs work, add curse cards
     IEnumerator summon(){
         //Debug.Log(this.gameObject + " is summoning minion!");
         if (gm.getAvailableEnemySlots() != null) {
@@ -538,25 +541,50 @@ public class enemy : MonoBehaviour
         yield return null;
     } 
     IEnumerator buffSelf(){
-        Debug.Log(this.gameObject + " is buffing self!");
+        Debug.Log(this.gameObject + " is buffing self by amount:" + stats.buffAmount);
+        this.status[buffSprite] += stats.buffAmount;
+        updateStatusBar();
         yield return null;
-    } //needs work
+    } 
     IEnumerator buffOthers(){
         Debug.Log(this.gameObject + " is buffing others!");
+        foreach (GameObject enemy in gm.getAllEnemies()) {
+            if (enemy.gameObject != this.gameObject) {
+                enemy.GetComponent<enemy>().status[buffSprite] += stats.buffAmount;
+                enemy.GetComponent<enemy>().updateStatusBar();
+            }
+        }
         yield return null;
-    } //needs work
-    IEnumerator debuff(){
-        Debug.Log(this.gameObject + " is debuffing player!");
+    } 
+    IEnumerator weaken(){
+        Debug.Log(this.gameObject + " is weakening the player!");
+        player.GetComponent<player>().status[weakenSprite] += stats.weakenAmount;
+        player.GetComponent<player>().updateStatusBar();
         yield return null;
-    } //needs work
+    } 
+    IEnumerator sunder()
+    {
+        Debug.Log(this.gameObject + " is sundering the player!");
+        player.GetComponent<player>().status[sunderedSprite] += stats.sunderAmount;
+        player.GetComponent<player>().updateStatusBar();
+        yield return null;
+    } 
     IEnumerator healself(){
         Debug.Log(this.gameObject + " is healing self!");
+        UpdateEnemyHealth(-stats.healSelfAmount);
         yield return null;
-    } //needs work
+    } 
     IEnumerator healOtherEnemies(){
         Debug.Log(this.gameObject + " is healing others!");
+        foreach (GameObject enemy in gm.getAllEnemies())
+        {
+            if (enemy.gameObject != this.gameObject)
+            {
+                enemy.GetComponent<enemy>().UpdateEnemyHealth(-stats.healOthersAmount);
+            }
+        }
         yield return null;
-    } //needs work
+    } 
     IEnumerator corrosion(){
         Debug.Log(this.gameObject + " is corroding armor!");
         player.GetComponent<player>().setBlock(0);

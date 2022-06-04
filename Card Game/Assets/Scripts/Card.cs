@@ -35,6 +35,8 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     public bool vanish;
     public bool special;
     public string specialName;
+    public string startOfTurnEffectName;
+    public string endOfTurnEffectName;
 
     public bool isSelectedCard;
     public bool firstTime = true;
@@ -44,6 +46,8 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         play = FindObjectOfType<cardPlayer>();
         isSelectedCard = false;
         typeTarget = card.typeTarget;
+        startOfTurnEffectName = card.startOfTurnEffectName;
+        endOfTurnEffectName = card.endOfTurnEffectName;
         manaCost = card.manaCost;
         nameText.text = card.name;
         description.text = card.description;
