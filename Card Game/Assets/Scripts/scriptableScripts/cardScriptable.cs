@@ -28,4 +28,6 @@ public class cardScriptable : ScriptableObject
     public string startOfTurnEffectName;
     public bool hasEndOfTurnEffect;
     public string endOfTurnEffectName;
+    public int startOfTurnValue;
+    public int endOfTurnValue;
 }

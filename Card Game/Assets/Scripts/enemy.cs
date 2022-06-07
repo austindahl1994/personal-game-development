@@ -58,8 +58,6 @@ public class enemy : MonoBehaviour
     public List<string> actions = new List<string>();
     public List<string> nextAction = new List<string>();
     private int countDownTimer;
-    private int currentIndex;
-    public bool hasTakenTurn;
     public bool intentSet;
 
     //need to add coroutines that go in order for each enemy, so it shows blocking damage and such
@@ -197,8 +195,6 @@ public class enemy : MonoBehaviour
 
     public void setStartValues() {
         intentSet = false;
-        hasTakenTurn = true;
-        currentIndex = 0;
         damage = stats.damage;
         defense = stats.defense;
         buffAmount = stats.buffAmount;
@@ -243,7 +239,6 @@ public class enemy : MonoBehaviour
 
     private void Die()
     {
-        gm.nextEnemyTurn(gm.getCurrentIndex()+1);
         gameObject.tag = "Untagged";
         //Debug.Log("Die was called");
         this.anim.SetTrigger("death");
@@ -252,16 +247,12 @@ public class enemy : MonoBehaviour
     public void nextPhase() { //called after death animation is done
         Debug.Log("Next phase called");
         this.transform.SetAsLastSibling();
-        if (!gm.isPlayerTurn) {
-            gm.nextEnemyTurn(gm.getCurrentIndex() + 1);
-        }
         this.GetComponentInParent<enemyUI>().updateEnemy();
         this.GetComponentInParent<enemyUI>().newEnemyReset();
         this.gameObject.transform.position = new Vector3(0, 0, -20);
     }
 
     public void setParentFalse() {
-        //gm.nextEnemyTurn(gm.getCurrentIndex());
         this.transform.parent.gameObject.SetActive(false);
         Destroy(this.transform.parent.gameObject);
     }
@@ -337,36 +328,21 @@ public class enemy : MonoBehaviour
         }
     }
 
-    public void doAllActions(int index)
+    public void doAllActions()
     {
-        if (hasTakenTurn) {
-            gm.nextEnemyTurn(gm.getCurrentIndex()+1);
-            return;
-        }
-        hasTakenTurn = true;
-        setCurrentIndex(index);
         directHealth(status[poisonSprite]);
         decrementAllStatuses();
         if (this.enemyHealth <= 0)
         {
-            //gm.nextEnemyTurn(++index);
-            return;
+            Die();
         }
         else
         {
-            StartCoroutine(takeTurn(index));
+            StartCoroutine(takeTurn());
         }
     }
 
-    public IEnumerator takeTurn(int index) {
-        if (this.gameObject.transform.parent.tag == "newSummon") {
-            this.gameObject.transform.parent.tag = "summoned";
-            nextAction.Clear();
-            intentSet = false;
-            yield return new WaitForSeconds(0.4f);
-            gm.nextEnemyTurn(++index);
-            yield return null;
-        }
+    public IEnumerator takeTurn() {
         //Debug.Log("Take turn now is: " + this);
         //Debug.Log(this.gameObject + " has: " + nextAction.Count + " actions");
         if (nextAction[0] != "countDown") {
@@ -376,19 +352,8 @@ public class enemy : MonoBehaviour
             StartCoroutine(action);
         }
         nextAction.Clear();
-        yield return new WaitForSeconds(0.9f);
-        //Debug.Log(this.gameObject + " has: " + nextAction.Count + " actions");
-        //setIntent();
         intentSet = false;
-        gm.nextEnemyTurn(++index);
         yield return null;
-    }
-    private void setCurrentIndex(int index) {
-        currentIndex = index;
-    }
-
-    private int getCurrentIndex() {
-        return currentIndex;
     }
 
     public void UpdateEnemyHealth(float incomingDamage) //damage inc as a negative to lower defense/hp

@@ -35,5 +35,5 @@ MonoBehaviour:
   curseAction: 0
   weakenAction: 0
   sunderAction: 0
-  summon: {fileID: 0}
+  summon: {fileID: 7726954680724883969, guid: b49a1a6d4f6019447b0564768931e7c6, type: 3}
   canGiveCard: {fileID: 5219563744403011755, guid: bc743924f32a486448423dd1c49df372, type: 3}

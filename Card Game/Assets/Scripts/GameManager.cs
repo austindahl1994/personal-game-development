@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public List<Card> roundCards = new List<Card>();
     public List<Card> hand = new List<Card>();
     public List<Card> discard = new List<Card>();
+    private List<GameObject> currentEnemies = new List<GameObject>();
 
     //These are for the pileUI to show and scroll with text to describe which card list looked at
     public GameObject pileUI;
@@ -39,8 +40,6 @@ public class GameManager : MonoBehaviour
     private int maxMana;
     public int playerMana;
     public bool cardIsSelected;
-    public int startNumberEnemies;
-    public int enemyStartingIndex;
     //modded ints from relics
     public int modManaAdd;
     public int modManaMultiply;
@@ -48,7 +47,6 @@ public class GameManager : MonoBehaviour
     public bool isPlayerTurn;
     private void Start()
     {
-        enemyStartingIndex = 0;
         player = FindObjectOfType<player>();
         play = FindObjectOfType<cardPlayer>();
         modManaAdd = 0;
@@ -61,7 +59,6 @@ public class GameManager : MonoBehaviour
         foreach (Card card in deck) {
             roundCards.Add(card);
         }
-        startNumberEnemies = getAllEnemies().Count;
         drawAmount = 5; //this is for tests, use value that can be changed for actual game
         maxHandSize = 10; //to ensure cards can't go off screen, could be lower as a detriment?
         drawHand();
@@ -217,6 +214,10 @@ public class GameManager : MonoBehaviour
         }
         waitingForNextTurn = true;
         foreach (Card card in hand) {
+            if (card.hasStartOfTurnEffect)
+            {
+                play.playStartOfTurnEffect(card);
+            }
             card.isInHand = false;
             card.gameObject.SetActive(false);
             discard.Add(card);
@@ -226,37 +227,25 @@ public class GameManager : MonoBehaviour
         foreach (GameObject enemy in getAllEnemies())
         {
             enemy.GetComponent<enemy>().setBlock(0);
-            enemy.GetComponent<enemy>().hasTakenTurn = false;
+            currentEnemies.Add(enemy);
         }
-        nextEnemyTurn(enemyStartingIndex);
+
+        //nextEnemyTurn(enemyStartingIndex);
+        StartCoroutine(testEnemyTurn(currentEnemies[0]));
     }
 
-    public void nextEnemyTurn(int index) {
-        if (isPlayerTurn) {
-            return;
-        }
-        if (index >= enemyCoveringUI.Length) {
-            enemyStartingIndex = 0;
+    public IEnumerator testEnemyTurn(GameObject enemy) {
+        enemy.GetComponent<enemy>().doAllActions();
+        yield return new WaitForSeconds(0.9f);
+        currentEnemies.RemoveAt(0);
+        if (currentEnemies.Count == 0)
+        {
             startPlayerTurn();
-        } else if (enemyCoveringUI[index].childCount == 0 ||
-                    !enemyCoveringUI[index].GetChild(0).gameObject.activeInHierarchy ||
-                    enemyCoveringUI[index].GetChild(0).gameObject == null) {
-            index++;
-            setCurrentIndex(index);
-            nextEnemyTurn(index);
-        } else {
-            setCurrentIndex(index);
-            enemyCoveringUI[index].GetChild(0).GetChild(2).gameObject.GetComponent<enemy>().doAllActions(index);
         }
-    }
-    private void setCurrentIndex(int index)
-    {
-        enemyStartingIndex = index;
-    }
-
-    public int getCurrentIndex()
-    {
-        return enemyStartingIndex;
+        else {
+            StartCoroutine(testEnemyTurn(currentEnemies[0]));
+        }
+        yield return null;
     }
 
     private void drawHand() {
@@ -265,6 +254,12 @@ public class GameManager : MonoBehaviour
             currentHandSize = hand.Count;
             DrawCard();
         }
+
+        foreach (Card card in hand) {
+            if (card.hasStartOfTurnEffect) {
+                play.playStartOfTurnEffect(card);
+            }
+        }
     }
 
     private void startPlayerTurn() {
@@ -272,7 +267,6 @@ public class GameManager : MonoBehaviour
         isPlayerTurn = true;
         foreach (GameObject enemy in getAllEnemies()) {
             enemy.GetComponent<enemy>().setIntent();
-            enemy.GetComponent<enemy>().hasTakenTurn = false;
         }
         player.GetComponent<player>().setBlock(0);
         waitingForNextTurn = false;

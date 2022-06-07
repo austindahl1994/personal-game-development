@@ -35,17 +35,24 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     public bool vanish;
     public bool special;
     public string specialName;
+    public bool hasStartOfTurnEffect;
+    public bool hasEndOfTurnEffect;
     public string startOfTurnEffectName;
     public string endOfTurnEffectName;
-
+    public int startOfTurnValue;
+    public int endOfTurnValue;
     public bool isSelectedCard;
     public bool firstTime = true;
 
     private void Start()
     {
         play = FindObjectOfType<cardPlayer>();
+        startOfTurnValue = card.startOfTurnValue;
+        endOfTurnValue = card.endOfTurnValue;
         isSelectedCard = false;
         typeTarget = card.typeTarget;
+        hasStartOfTurnEffect = card.hasStartOfTurnEffect;
+        hasEndOfTurnEffect = card.hasEndOfTurnEffect;
         startOfTurnEffectName = card.startOfTurnEffectName;
         endOfTurnEffectName = card.endOfTurnEffectName;
         manaCost = card.manaCost;

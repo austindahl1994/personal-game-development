@@ -69,14 +69,31 @@ public class cardPlayer : MonoBehaviour
         allEnemies.Clear();
     }
 
-    public void playEndOfTurnEffect(Card cardPlayed) {
-        StartCoroutine(cardPlayed.startOfTurnEffectName);
-    }
     public void playStartOfTurnEffect(Card cardPlayed) {
-        StartCoroutine(cardPlayed.endOfTurnEffectName);
+        StartCoroutine(cardPlayed.startOfTurnEffectName, cardPlayed.startOfTurnValue);
+    }
+    public void playEndOfTurnEffect(Card cardPlayed) {
+        StartCoroutine(cardPlayed.endOfTurnEffectName, cardPlayed.endOfTurnValue);
     }
 
-    IEnumerator someName() {
+    IEnumerator heal(int value) {
+        player.GetComponent<player>().updatePlayerHealth(value);
         yield return null;
     }
+
+    IEnumerator damage(int value)
+    {
+        player.GetComponent<player>().updatePlayerHealth(value);
+        yield return null;
+    }
+
+    IEnumerator draw(int value)
+    {
+        for (int i = 0; i < value; i++) {
+            gm.DrawCard();
+        }
+        yield return null;
+    }
+
+
 }
