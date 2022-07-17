@@ -28,7 +28,7 @@ MonoBehaviour:
   weakenAmount: 0
   corrosion: 0
   buffSelfAction: 0
-  buffOthersAction: 1
+  buffOthersAction: 0
   hasDeathEffect: 0
   retainsBlock: 0
   countdownAction: 0

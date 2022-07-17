@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Bat
   actionsPerTurn: 2
   startingBlock: 0
-  damage: 7
+  damage: 1
   defense: 2
   poisonDamage: 2
   health: 25
@@ -23,8 +23,10 @@ MonoBehaviour:
   regenSelfAmount: 0
   healSelfAmount: 0
   healOthersAmount: 0
-  corrosionAmount: 0
   buffAmount: 0
+  sunderAmount: 0
+  weakenAmount: 0
+  corrosion: 0
   buffSelfAction: 0
   buffOthersAction: 0
   hasDeathEffect: 0

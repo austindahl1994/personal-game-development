@@ -22,6 +22,7 @@ public class enemy : MonoBehaviour
     public Sprite countdownSprite;
     public Sprite regenSprite;
     public Sprite burnSprite;
+    public Sprite bleedSprite;
 
     public Sprite attackIntentSprite;
     public Sprite defendIntentSprite;
@@ -97,6 +98,7 @@ public class enemy : MonoBehaviour
         status.Add(countdownSprite, 0);
         status.Add(regenSprite, 0);
         status.Add(burnSprite, 0);
+        status.Add(bleedSprite, 0);
         //Debug.Log(status);
     }
 

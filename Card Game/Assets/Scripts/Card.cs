@@ -162,6 +162,9 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
             Debug.Log("Not enough mana!");
             return;
         }
+        if (gm.isInUI) {
+            return;
+        }
         if (typeTarget)
         {
             if (isSelectedCard)

@@ -19,6 +19,9 @@ public class cardPlayer : MonoBehaviour
     //if the card requires no target play it immediately
     public void playCard(Card cardPlayed)
     {
+        if (gm.isInUI) {
+            return;
+        }
         if (cardPlayed.defense > 0)
         {
             player.GetComponent<player>().addBlock(cardPlayed.defense);
@@ -39,6 +42,10 @@ public class cardPlayer : MonoBehaviour
 
     public void playCard(Card cardPlayed, GameObject target)
     {
+        if (gm.isInUI)
+        {
+            return;
+        }
         //Debug.Log("Target is: " + target);
         player.GetComponent<player>().addBlock(cardPlayed.defense);
         //Debug.Log("Card received was: " + cardPlayed);
